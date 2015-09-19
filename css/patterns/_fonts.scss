@@ -1,0 +1,24 @@
+/* Junction is a font from: https://www.theleagueofmoveabletype.com/junction */
+/* Delicious is a font from: http://www.exljbris.com/delicious.html */
+
+@font-face {
+	font-family: 'Junction';
+	src: url('../fonts/junction-regular.woff2') format('woff2'),
+		url('../fonts/junction-regular.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Junction';
+	src: url('../fonts/junction-light.woff2') format('woff2'),
+		url('../fonts/junction-light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Delicious';
+	src: url('../fonts/delicious-heavy.woff2') format('woff2'),
+		url('../fonts/delicious-heavy.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}

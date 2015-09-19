@@ -1,0 +1,42 @@
+.portfolio {
+	@include clearfix;
+
+	margin-bottom: 20px;
+	text-align: center;
+
+	@include breakpoint(medium) {
+		margin-bottom: 0;
+		font-size: 0;
+		text-align: left;
+	}
+
+	&__image {
+		@include breakpoint(medium) {
+			display: inline-block;
+			vertical-align: middle;
+			width: 50%;
+		}
+
+		img {
+			line-height: 0;
+		}
+	}
+
+	&__description {
+		padding: 1em 3em;
+
+		@include breakpoint(medium) {
+			display: inline-block;
+			vertical-align: middle;
+			width: 50%;
+			font-size: 16px;
+			font-size: 1rem;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		margin-right: 1em;
+		margin-bottom: .5em;
+	}
+}

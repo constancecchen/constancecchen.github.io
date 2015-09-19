@@ -1,0 +1,19 @@
+.footer {
+	max-width: $main-width;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 1em 1em;
+	font-size: 0.9rem;
+	text-align: center;
+	color: $gray;
+
+	@include breakpoint(large) {
+		margin-left: $sidebar-width;
+	}
+
+	&__divider {
+		display: inline-block;
+		padding: 0 0.5em;
+		color: $gray;
+	}
+}

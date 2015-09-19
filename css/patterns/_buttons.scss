@@ -1,0 +1,38 @@
+.button {
+	display: inline-block;
+	font-weight: 400;
+	color: $blue;
+	border: 2px solid $blue;
+
+	&:hover, &:focus {
+		color: $white;
+		background-color: $blue;
+	}
+
+	&--large {
+		padding: .6em .9em .4em;
+		margin: .8em 0;
+	}
+
+	&--small {
+		padding: .2em .6em .1em;
+	}
+
+	&--inverse {
+		color: $white;
+		background-color: $blue;
+
+		&:hover, &:focus {
+			color: $blue;
+			background-color: transparent;
+		}
+	}
+
+	.fa {
+		margin-right: 2px;
+
+		&-paint-brush {
+			margin-right: 5px;
+		}
+	}
+}

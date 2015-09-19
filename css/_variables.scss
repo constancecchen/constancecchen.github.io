@@ -1,0 +1,26 @@
+// Font
+
+$junction:  'Junction', Helvetica, Arial, sans-serif;
+$delicious: 'Delicious', Helvetica, Arial, sans-serif;
+
+// Colors
+
+$white:      #fff;
+$black:      #444;
+$gray:       #bbb;
+$blue:       #59c;
+$light-blue: #7cc;
+$dark-blue:  #022539;
+
+// Layout
+
+$main-width:    1000px;
+$sidebar-width: 300px;
+
+// Mobile-First Breakpoints
+
+$breakpoint-sizes: (
+	'small':   480px,
+	'medium':  768px,
+	'large':   1200px,
+);

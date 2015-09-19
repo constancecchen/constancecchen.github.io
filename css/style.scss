@@ -1,0 +1,17 @@
+/* Naming convention used is BEM */
+
+@import "variables";
+
+/* Patterns */
+@import "patterns/base";
+@import "patterns/utilities";
+@import "patterns/fonts";
+@import "patterns/typography";
+@import "patterns/buttons";
+
+/* Sections */
+
+@import "sections/main";
+@import "sections/sidebar";
+@import "sections/portfolio";
+@import "sections/footer";

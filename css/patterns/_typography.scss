@@ -1,0 +1,27 @@
+/* Typography */
+
+html, body {
+	font: 300 1em/1.7 $junction;
+	color: $black;
+}
+
+::selection, ::-moz-selection {
+	background: $blue;
+	color: $white;
+}
+
+a {
+	@include transition(all .4s);
+
+	color: $blue;
+	font-weight: 400;
+	border-bottom: 2px solid transparent;
+
+	&:focus, &:hover {
+		border-bottom: 2px solid $blue;
+	}
+}
+
+p {
+	margin: 0 0 1em;
+}

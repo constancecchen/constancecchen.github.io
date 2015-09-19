@@ -1,0 +1,63 @@
+.sidebar {
+	padding: 3em 2em 1em;
+	font-size: .9em;
+	text-align: center;
+	color: $light-blue;
+	background-color: $dark-blue;
+	background-image: url('../images/sidebar.jpg');
+	background-position: center 8%;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	border-right: 2px solid $light-blue;
+
+	@include breakpoint(large) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: $sidebar-width;
+		height: 100%;
+		background-position: center top;
+	}
+
+	a {
+		color: $white;
+
+		&:hover, &:focus {
+			color: $light-blue;
+			border-bottom-color: transparent;
+		}
+	}
+
+	&__wrapper {
+		max-width: $sidebar-width;
+		margin: 0 auto;
+	}
+
+	&__avatar {
+		max-width: 128px;
+		margin-bottom: 20px;
+		border-radius: 50%;
+		box-shadow: 0 0 12px $dark-blue;
+	}
+
+	&__name {
+		font-family: $delicious;
+		font-size: 1.8em;
+		font-weight: 900;
+		line-height: 1.5;
+		color: $white;
+	}
+
+	&__links {
+		margin: 2.5em 0;
+
+		.fa {
+			padding: 0 .4em;
+			font-size: 1.5em;
+		}
+		.fa-envelope {
+			font-size: 1.3em;
+			vertical-align: top;
+		}
+	}
+}
