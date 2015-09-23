@@ -18,6 +18,9 @@ body, html {
 	height: 100%;
 	margin: 0;
 }
+main, header, footer, nav, menu, section, article, aside {
+	display: block; // Prevents layouts from breaking on IE 8-11 & Firefox
+}
 iframe {
 	border: 0;
 }
