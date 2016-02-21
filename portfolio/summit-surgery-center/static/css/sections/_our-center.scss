@@ -1,0 +1,85 @@
+/* An 'About' page template */
+
+.our-center {
+	main {
+		background-image: url('../images/about-bg.jpg');
+		@include background-cover;
+	}
+
+	.u-row {
+		position: relative;
+	}
+}
+
+.our-center__blurb, .our-center__values {
+	padding: 1em;
+	background-color: rgba($color-white, .9);
+
+	@media (max-width: $mq-small) {
+		width: 100%;
+	}
+
+	@media (min-width: $mq-xsmall) {
+		padding: 2.5em;
+		font-size: .9em;
+	}
+}
+
+/* Values slideout */
+
+.our-center__values {
+	position: relative;
+	display: none;
+	margin-left: 0;
+
+	@media (min-width: $mq-small) {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		display: block;
+		height: 0;
+		width: 0;
+
+		@media (max-width: $mq-small) {
+			left: 2em;
+			top: -1.5em;
+			border-left: 1.6em solid transparent;
+			border-right: 1.6em solid transparent;
+			border-bottom: 1.6em solid rgba($color-white, .9);
+		}
+
+		@media (min-width: $mq-small) {
+			right: 100%;
+			bottom: 3em;
+			left: auto;
+			border-top: 2em solid transparent;
+			border-bottom: 2em solid transparent;
+			border-right: 2em solid rgba($color-white, .9);
+		}
+	}
+
+	h2, h3, h4 {
+		margin: 1.2em auto .3em;
+		font-weight: 700;
+
+		em {
+			display: inline-block;
+			margin-left: .3em;
+			font-weight: 400;
+		}
+	}
+
+	p {
+		margin-top: 0;
+	}
+}
+.our-center__values-close {
+	position: absolute;
+	right: 1.5em;
+	top: 1.2em;
+}

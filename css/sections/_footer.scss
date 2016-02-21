@@ -1,19 +1,33 @@
+/*==================================
+ Footer
+===================================*/
+
 .footer {
-	max-width: $main-width;
-	margin-left: auto;
-	margin-right: auto;
 	padding: 0 1em 1em;
-	font-size: 0.9rem;
+	font-size: 0.9em;
 	text-align: center;
 	color: $gray;
 
-	@include breakpoint(large) {
-		margin-left: $sidebar-width;
+	@media print {
+		display: none;
 	}
+	
+	a {
+		font-weight: inherit;
+		color: inherit;
+	}
+}
 
-	&__divider {
-		display: inline-block;
-		padding: 0 0.5em;
-		color: $gray;
-	}
+/*==================================
+ Sticky footer
+===================================*/
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	flex-grow: 1;
 }

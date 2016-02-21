@@ -1,0 +1,54 @@
+/* Helper/utility classes */
+ 
+.u-clearFix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+.u-floatLeft {
+	float: left;
+}
+.u-floatRight {
+	float: right;
+}
+.u-floatNone {
+	float: none;
+}
+
+.u-alignCenter {
+	text-align: center;
+}
+.u-alignLeft {
+	text-align: left;
+}
+.u-alignRight {
+	text-align: right;
+}
+
+.u-wordTruncate {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.u-wordBreak {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+.u-removed {
+	display: none;
+}
+.u-hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+.u-screenReader {
+	position: absolute !important;
+	clip: rect(0 0 0 0) !important;
+}

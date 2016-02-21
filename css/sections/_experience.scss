@@ -1,0 +1,66 @@
+/*==================================
+ Experience section
+===================================*/
+
+.experiences {
+	// Unstyle list
+	margin: 0;
+	padding-left: 0;
+	list-style-type: none;
+	// For flex, just in case
+	width: 100%;
+}
+
+.experience {
+	@include clearfix;
+	margin: 1em auto 0;
+
+	&__heading {
+		@include clearfix;
+		margin-bottom: .4em;
+		border-bottom: 2px solid lighten($blue, 33%);
+		text-align: right;
+	}
+	&__title {
+		float: left;
+		text-align: left;
+	}
+	&__date {
+		padding-left: .5em;
+		font-weight: 400;
+	}
+
+	&__location {
+		font-weight: 400;
+		color: $blue;
+	}
+}
+
+/*==================================
+ Filtering Logic
+===================================*/
+
+.experience {
+	overflow: hidden;
+	transition:
+		opacity .4s, transform .4s,
+		max-height .3s linear .1s,
+		margin 0s .4s;
+	will-change: opacity, transform;
+	// Animating max-height isn't performant, but the only non-JS way to do a slideup
+}
+#exp-dev:not(:checked) ~ .experiences [data-role~="dev"],
+#exp-des:not(:checked) ~ .experiences [data-role~="design"] {
+	max-height: 0;
+	margin: 0;
+	transform: translateY(-20%);
+	opacity: 0;
+}
+#exp-dev:checked ~ .experiences [data-role~="dev"],
+#exp-des:checked ~ .experiences [data-role~="design"] {
+	max-height: 40em;
+	opacity: 1;
+	transition:
+		margin 0s 0s, max-height .3s linear,
+		opacity .3s .2s, transform .5s .2s;
+}

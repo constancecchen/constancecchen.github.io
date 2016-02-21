@@ -1,0 +1,74 @@
+.primary-nav {
+	@include clearfix;
+
+	z-index: 2;
+	position: relative;
+	text-align: center;
+	background: $white;
+	box-shadow: 0 3px 16px 9px rgba($dark-purple, .13);
+
+	@media (min-width: $breakpoint-medium) {
+		height: 8.7em;
+	}
+
+	&__menu {
+		@include unstyled-list;
+	}
+	&__menu-item {
+		display: block;
+		float: left;
+		width: 50%;
+		padding-right: 2%;
+		padding-left: 2%;
+
+		@media (min-width: $breakpoint-small) {
+			width: 25%;
+		}
+		@media (min-width: $breakpoint-medium) {
+			width: 16.75%;
+		}
+	}
+	&__link {
+		@include transition(color .2s ease-out);
+
+		display: inline-block;
+		width: 100%;
+		padding-top: .2em;
+		padding-bottom: 1.8em;
+		font-size: 1.6em;
+		letter-spacing: .02em;
+		text-transform: uppercase;
+
+		@media (min-width: $breakpoint-medium) {
+			padding-top: 2.2em;
+			padding-bottom: 2.2em;
+		}
+
+		&:hover, &:focus, &.is-current {
+			color: $orange;
+		}
+	}
+
+	&__logo {
+		width: 90%;
+		margin-left: 2%;
+
+		@media (min-width: $breakpoint-medium) {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 33%;
+			margin-left: -16.5%;
+		}
+	}
+	&__logo-spacing {
+		display: none;
+
+		@media (min-width: $breakpoint-medium) {
+			display: block;
+			float: left;
+			width: 33%;
+			height: 1px; // Otherwise it doesn't get rendered
+		}
+	}
+}

@@ -1,0 +1,33 @@
+.payment-form {
+	margin-top: 3em;
+	padding: 2em;
+	border: 1px solid $color-white;
+
+	@media (min-width: $mq-small) {
+		padding: 3em 1em;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 1em auto 0;
+
+		@media (min-width: $mq-small) {
+			display: inline-block;
+			width: 48%;
+			padding-right: 2em;
+			text-align: right;
+		}
+	}
+	input, select, textarea {
+		width: 100%;
+		margin: 1em auto;
+
+		@media (min-width: $mq-small) {
+			width: 40%;
+		}
+	}
+	input[type=submit] {
+		width: auto;
+		margin-top: 2em;
+	}
+}

@@ -1,15 +1,22 @@
-main {
-	max-width: $main-width;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 2em 1em;
+/*==================================
+ Main/sections
+===================================*/
 
-	@include breakpoint(small) {
+body {
+	@media screen and (min-width: $mq-medium) {
+		margin-left: $sidebar-width;
+	}
+}
+
+main {
+	padding: 2em 1.5em;
+
+	@media (min-width: $mq-medium) {
 		padding: 2em 4em;
 	}
 
-	@include breakpoint(large) {
-		margin-left: $sidebar-width;
+	@media print {
+		padding: 0;
 	}
 }
 
@@ -19,15 +26,21 @@ main {
 	&__heading {
 		margin-bottom: .3em;
 		font-family: $delicious;
-		font-size: 1.8em;
+		font-size: 2.2em;
 		font-weight: 900;
 		line-height: 1.5;
+		color: $blue;
 	}
-	&__heading .fa {
-		font-size: .8em;
-		margin-right: 8px;
-	}
-	&__cta {
-		text-align: center;
+	&__icon {
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		top: -.05em;
+		width: .7em;
+		height: .7em;
+
+		@media screen and (min-width: $mq-medium) {
+			margin-left: -1.1em;
+		}
 	}
 }

@@ -1,0 +1,76 @@
+/* Meet Our Surgeons page.
+ * Masthead background image can be inlined if necessary.
+ */
+
+.surgeons-and-specialties .site-header {
+	background-image: url('../images/surgeons-specialties-mast-bg.jpg');
+}
+
+.surgeons {
+	margin-bottom: 3em;
+
+	.js-surgeons {
+		position: relative;
+	}
+	.is-fading-out {
+		position: absolute;
+		top: 0;
+	}
+}
+
+.surgeons__pictures {
+	line-height: 0;
+
+	img {
+		display: none;
+		width: 100%;
+
+		&:first-of-type {
+			display: block;
+		}
+	}
+}
+
+.surgeons__list {
+	margin: 2em auto 0;
+	padding-left: 0;
+	list-style-type: none;
+
+	li {
+		margin: .5em auto;
+		font-family: $font-serif;
+		font-size: 1.5em;
+		line-height: 1.2;
+	}
+
+	button {
+		text-align: left;
+	}
+
+	.is-current, button:hover, button:focus {
+		color: $color-primary;
+		outline: 0;
+	}
+	.is-current {
+		font-weight: 700;
+	}
+}
+
+.surgeons__bio {
+	display: none;
+
+	&:first-of-type {
+		display: block;
+	}
+
+	h2 {
+		display: inline;
+		font-family: $font-sans-serif;
+		font-size: 1em;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	h2 + p {
+		display: inline;
+	}
+}

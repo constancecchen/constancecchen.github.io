@@ -1,0 +1,286 @@
+.page-header--properties {
+	background-image: url('../img/properties/properties_header.jpg');
+}
+.page-header__teaser--properties {
+	background-color: rgba($orange, .9);
+
+	&:after {
+		background-image: url('../img/properties/properties_arrow.png');
+	}
+}
+
+.property {
+	position: relative;
+
+	&__info {
+		position: relative;
+		padding: 4em 2em 3em;
+		background-color: $light-gray;
+
+		@media (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
+			float: none;
+			width: 100%;
+		}
+		@media (min-width: $breakpoint-large) {
+			padding: 6% 3% 5% 5%;
+		}
+
+		&:after {
+			z-index: 2;
+			content: '';
+			display: block;
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			width: 0;
+			height: 0;
+			margin-left: -2em;
+			border-style: solid;
+			border-width: 3em 2em 0 2em;
+			border-color: $light-gray transparent transparent transparent;
+
+			@media (min-width: $breakpoint-medium) {
+				top: 50%;
+				left: 100%;
+				margin-left: 0;
+				margin-top: -6em;
+				border-width: 2em 0 2em 3em;
+				border-color: transparent transparent transparent $light-gray;
+			}
+		}
+	}
+
+	&__title {
+		margin: 0 auto .1em;
+		font-size: 3.4em;
+		font-weight: bold;
+		letter-spacing: .05em;
+		text-transform: uppercase;
+	}
+
+	&__location {
+		margin: 0 auto 1.2em;
+		font-size: 2.2em;
+		font-weight: bold;
+		letter-spacing: .03em;
+		text-transform: uppercase;
+		color: $light-purple;
+	}
+
+	&__details {
+		@include unstyled-list;
+
+		margin-bottom: 2em;
+		font-size: 2.2em;
+		font-weight: bold;
+		letter-spacing: .03em;
+		line-height: 1.6;
+		text-transform: uppercase;
+
+		@media (min-width: $breakpoint-medium) and (max-width: $breakpoint-large) {
+			font-size: 1.8em;
+		}
+	}
+	&__detail {
+		display: block;
+	}
+
+	&__link {
+		@include transition(background-color .3s ease-out);
+
+		position: relative;
+		display: inline-block;
+		min-width: 10em;
+		padding: .5em .3em .5em 3em;
+		font-size: 1.8em;
+		text-transform: uppercase;
+		color: $white;
+		background-color: $orange;
+
+		&:after {
+			@include transition(border-color .3s ease-out);
+
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 100%;
+			display: block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 2em .4em 0 0;
+			border-color: $orange transparent transparent transparent;
+		}
+
+		&:hover, &:focus {
+			background-color: $dark-purple;
+
+			&:after {
+				border-color: $dark-purple transparent transparent transparent;
+			}
+		}
+	}
+	&__link-icon {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		display: block;
+		width: 2.2em;
+		background-color: rgba(#000, .15);
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: .12em;
+			height: 1em;
+			margin-top: -.5em;
+			margin-left: -.06em;
+			background-color: $white;
+			border-radius: 1em;
+		}
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 1em;
+			height: .12em;
+			margin-top: -.06em;
+			margin-left: -.5em;
+			background-color: $white;
+			border-radius: 1em;
+		}
+	}
+}
+
+.property__primary-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom: 2px solid $light-gray;
+
+	@media (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
+		width: 100%; // Extend the default grid collapse point
+	}
+	@media (min-width: $breakpoint-medium) {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		border-bottom-width: 0;
+
+		img {
+			display: none;
+		}
+	}
+}
+
+.property__secondary-image {
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@media (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
+		width: 100%; // Extend the default grid collapse point
+	}
+	@media (min-width: $breakpoint-medium) {
+		height: 0;
+		padding-bottom: 30%;
+
+		img {
+			display: none;
+		}
+	}
+	@media (min-width: $breakpoint-large) {
+		padding-bottom: 16%;
+	}
+}
+
+.property--align-right {
+	@media (min-width: $breakpoint-medium) {
+		.property__info {
+			float: right;
+
+			&:after {
+				left: auto;
+				right: 100%;
+				border-width: 2em 3em 2em 0;
+				border-color: transparent $light-gray transparent transparent;
+			}
+		}
+		.property__primary-image {
+			right: auto;
+			left: 0;
+		}
+		.property__secondary-image {
+			float: right;
+		}
+	}
+}
+
+.sold-portfolio {
+	padding-top: 5em;
+	color: $light-gray;
+	background: $dark-purple;
+
+	&__heading {
+		margin: 0 .5em 1.2em;
+		font-size: 3.4em;
+		font-weight: bold;
+		letter-spacing: .05em;
+		text-transform: uppercase;
+
+		@media (min-width: $breakpoint-small) {
+			margin-right: 1.5em;
+			margin-left: 1.5em;
+		}
+	}
+}
+
+.sold-property {
+	padding-right: 2em;
+	padding-left: 2em;
+	margin-bottom: 6em;
+
+	@media (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
+		width: 100%; // Extend the grid breakpoint
+	}
+	@media (min-width: $breakpoint-small) {
+		padding-right: 1em;
+		padding-left: 5em;
+	}
+
+	&__title {
+		margin: 0 auto .2em;
+		font-size: 2.8em;
+		font-weight: bold;
+		letter-spacing: .05em;
+		text-transform: uppercase;
+	}
+
+	&__details {
+		@include unstyled-list;
+
+		font-size: 1.6em;
+		letter-spacing: .03em;
+		line-height: 1.3;
+		text-transform: uppercase;
+		color: $light-purple;
+	}
+
+	&__detail {
+		display: block;
+
+		@media (min-width: $breakpoint-large) {
+			display: inline-block;
+
+			&:not(:last-child):after {
+				content: ' |';
+			}
+		}
+	}
+}

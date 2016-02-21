@@ -1,21 +1,44 @@
+/*==================================
+ Button patterns
+===================================*/
+
 .button {
 	display: inline-block;
+	padding: .6em 1em .4em;
 	font-weight: 400;
+	text-align: center;
 	color: $blue;
 	border: 2px solid $blue;
+	transition: color .4s, background-color .4s, border-color .4s;
 
 	&:hover, &:focus {
 		color: $white;
 		background-color: $blue;
+		border-color: $blue;
 	}
 
-	&--large {
-		padding: .6em .9em .4em;
-		margin: .8em 0;
+	svg {
+		display: inline-block;
+		vertical-align: middle;
+		width: 1em;
+		height: 1em;
+		margin-top: -.15em;
+		margin-right: .3em;
 	}
 
-	&--small {
-		padding: .2em .6em .1em;
+	&--full {
+		margin: .4em .2em;
+
+		@media (min-width: $mq-medium) {
+			width: 98%;
+		}
+	}
+	&--half {
+		margin: .4em .2em;
+
+		@media (min-width: $mq-medium) {
+			width: 48%;
+		}
 	}
 
 	&--inverse {
@@ -25,14 +48,6 @@
 		&:hover, &:focus {
 			color: $blue;
 			background-color: transparent;
-		}
-	}
-
-	.fa {
-		margin-right: 2px;
-
-		&-paint-brush {
-			margin-right: 5px;
 		}
 	}
 }

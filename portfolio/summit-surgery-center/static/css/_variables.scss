@@ -1,0 +1,19 @@
+/* Fonts */
+
+$font-serif:      "ltc-bodoni-175", Georgia, Times, serif;
+$font-sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
+
+/* Colors */
+
+$color-white:      #fff;
+$color-black:      #434242;
+$color-primary:    #4398a0; // Turquoise
+$color-secondary:  #4dafb9; // A lighter tint
+
+/* Media query breakpoints */
+
+$mq-xsmall:    600px;  // Phones
+$mq-small:     900px;  // Tablets
+$mq-medium:    1200px; // Laptops
+$mq-large:     1600px; // Midsize monitor
+$mq-xlarge:    1900px; // Desktop

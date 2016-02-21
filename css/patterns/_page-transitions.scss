@@ -1,0 +1,68 @@
+/*==================================
+ Page transition animation classes
+===================================*/
+
+/*==================================
+ Slide in from left
+===================================*/
+
+.ani-slideInLeft {
+	animation: slideInLeft .8s ease-out;
+	will-change: transform;
+}
+
+@keyframes slideInLeft {
+	0% {
+		transform: translateX(-120%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+/*==================================
+ Slide in from left
+===================================*/
+
+.ani-slideOutLeft {
+	animation: slideOutLeft .6s ease-in;
+	animation-fill-mode: forwards;
+	will-change: transform;
+}
+
+@keyframes slideOutLeft {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+/*==================================
+ Fade in
+===================================*/
+
+.ani-fadeIn {
+	animation: fadeIn 1.8s linear;
+	will-change: opacity;
+}
+
+@keyframes fadeIn {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+/*==================================
+ Fade out
+===================================*/
+
+.ani-fadeOut {
+	animation: fadeOut 1s ease-in;
+	will-change: opacity;
+}
+
+@keyframes fadeOut {
+	0%   { opacity: 1; }
+	100% { opacity: 0; }
+}

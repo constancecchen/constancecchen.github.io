@@ -1,0 +1,20 @@
+/* Helper mixins for frequently reused CSS */
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin background-cover {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@mixin unstyled-list {
+	padding-left: 0;
+	list-style-type: none;
+}

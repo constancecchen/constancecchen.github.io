@@ -1,17 +1,27 @@
-/* Naming convention used is BEM */
+/*==================================
+ Stylesheet Setup
+===================================*/
 
 @import "variables";
 
-/* Patterns */
+/*==================================
+ Base resets, utilities, & patterns
+===================================*/
 @import "patterns/base";
 @import "patterns/utilities";
-@import "patterns/fonts";
 @import "patterns/typography";
 @import "patterns/buttons";
+@import "patterns/filters";
+@import "patterns/page-transitions";
 
-/* Sections */
+/*==================================
+ Specific sections
+===================================*/
 
 @import "sections/main";
 @import "sections/sidebar";
+@import "sections/skills";
+@import "sections/experience";
 @import "sections/portfolio";
 @import "sections/footer";
+@import "sections/portfolio-page";

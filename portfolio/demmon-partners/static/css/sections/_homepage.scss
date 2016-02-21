@@ -1,0 +1,177 @@
+.homepage-section {
+	position: relative;
+	padding: 5em 2.5em 7em;
+	text-align: center;
+	color: $white;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: inset 0 10px 8px -8px rgba($dark-purple, .3);
+
+	@media (min-width: $breakpoint-medium) {
+		padding: 12% 2em 6%;
+	}
+	@media (min-width: $breakpoint-large) {
+		min-height: 88vh;
+	}
+
+	&:after {
+		z-index: 2;
+		content: '';
+		display: block;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		width: 4em;
+		height: 3em;
+		margin-left: -2em;
+		background-image: url('../img/homepage/homepage_1_arrow.png');
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+.homepage-section__title {
+	margin-bottom: 1em;
+	font-size: 3em;
+	letter-spacing: .03em;
+	line-height: 1.2;
+	text-transform: uppercase;
+
+	@media (min-width: $breakpoint-small) {
+		font-size: 4em;
+	}
+	@media (min-width: $breakpoint-medium) {
+		margin: 0 auto 2em;
+	}
+}
+.homepage-section__subtitle {
+	max-width: 33em;
+	margin: 1em auto;
+	font-size: 2em;
+	font-style: italic;
+	letter-spacing: .03em;
+	line-height: 1.9;
+
+	@media (min-width: $breakpoint-small) {
+		font-size: 2.5em;
+	}
+	@media (min-width: $breakpoint-medium) {
+		margin: 2em auto 3em;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		max-width: 16em;
+		margin: 0 auto 2em;
+		height: 2px;
+		background: $white;
+	}
+}
+.homepage-section__button {
+	@include transition(background-color .3s ease-out);
+
+	position: relative;
+	display: block;
+	max-width: 12em;
+	padding: .6em;
+	margin: 0 auto;
+	font-size: 2.5em;
+	font-weight: bold;
+	letter-spacing: .03em;
+	text-indent: .5em;
+	text-transform: uppercase;
+	color: $white;
+
+	&:after {
+		@include transition(border-color .3s ease-out);
+
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 100%;
+		display: block;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 2.25em .4em 0 0;
+	}
+}
+
+// Individual Sections
+
+.homepage-section--about {
+	background-color: $dark-purple;
+	background-image: url('../img/homepage/homepage_1.jpg');
+
+	&:after {
+		background-image: url('../img/homepage/homepage_1_arrow.png');
+	}
+}
+.homepage-section__button--about {
+	background-color: $light-purple;
+
+	&:after {
+		border-color: $light-purple transparent transparent transparent;
+	}
+
+	&:hover, &:focus {
+		background-color: $orange;
+
+		&:after {
+			border-color: $orange transparent transparent transparent;
+		}
+	}
+}
+
+.homepage-section--team {
+	background-color: $light-purple;
+	background-image: url('../img/homepage/homepage_2.jpg');
+
+	&:after {
+		background-image: url('../img/homepage/homepage_2_arrow.png');
+	}
+}
+.homepage-section__button--team {
+	background-color: $orange;
+
+	&:after {
+		border-color: $orange transparent transparent transparent;
+	}
+
+	&:hover, &:focus {
+		background-color: $dark-purple;
+
+		&:after {
+			border-color: $dark-purple transparent transparent transparent;
+		}
+	}
+}
+
+.homepage-section--properties {
+	background-color: $orange;
+	background-image: url('../img/homepage/homepage_3.jpg');
+
+	&:after {
+		display: none;
+	}
+}
+.homepage-section__button--properties {
+	background-color: $dark-purple;
+
+	&:after {
+		border-color: $dark-purple transparent transparent transparent;
+	}
+
+	&:hover, &:focus {
+		background-color: $light-purple;
+
+		&:after {
+			border-color: $light-purple transparent transparent transparent;
+		}
+	}
+}
+.homepage-section__subtitle--properties {
+	max-width: 30em;
+}

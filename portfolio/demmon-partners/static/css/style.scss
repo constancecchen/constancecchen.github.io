@@ -1,0 +1,21 @@
+/* Plugin Dependencies */
+
+/* Authored Dependencies */
+@import "variables";
+@import "base/mixins";
+@import "base/resets";
+@import "base/utilities";
+@import "base/grid";
+
+/* Reusable Components & Patterns */
+@import "patterns/typography";
+@import "patterns/nav";
+@import "patterns/footer";
+@import "patterns/header";
+
+/* Sections */
+@import "sections/homepage";
+@import "sections/about";
+@import "sections/team";
+@import "sections/properties";
+@import "sections/contact";

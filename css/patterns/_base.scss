@@ -1,65 +1,83 @@
-/**
- * Foundation/Resets
- * Based on http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
- */
+/*==================================
+ Reset snippets have been reused from various resources
+ and tailored to most frequent use-cases. Credits:
 
-*, *:before, *:after {
-	box-sizing: inherit;
-}
+ https://jonathantneal.github.io/sanitize.css/
+ http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
+===================================*/
+
 html {
-	box-sizing: border-box;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;              // Resets all height and widths to include padding & borders
+	touch-action: manipulation;          // Disable double-tap to zoom on mobile
+	-ms-text-size-adjust: 100%;          // Prevent certain mobile browsers from automatically zooming fonts,
+	-webkit-text-size-adjust: 100%;      // most notably iOS & switching from portrait to landscape mode
 	-webkit-tap-highlight-color: transparent;
 }
-body, html {
-	height: 100%;
-	margin: 0;
+
+*, *:before, *:after {
+	box-sizing: inherit;                 // Allows box-sizing to be overridden on elements if necessary
 }
-main, header, footer, nav, menu, section, article, aside {
-	display: block; // Prevents layouts from breaking on IE 8-11 & Firefox
+
+body {
+	margin: 0;                           // Remove unwanted body margin
+	-moz-osx-font-smoothing: grayscale;  // Fonts on OS X will look more consistent with other systems
+	-webkit-font-smoothing: antialiased; // Prevents font "thickness" flickering when animations start and stop
 }
-iframe {
-	border: 0;
+
+img, svg, video, audio, embed, object, iframe, canvas {
+	max-width: 100%;                     // Make media elements responsive
+	height: auto;                        // Preserve aspect ratio
+	border: 0;                           // Fixes image links gaining a border in IE 8-10
 }
-h1, h2, h3, h4, h5, h6, ul, ol, blockquote, figure, button {
-	margin: 0;
-	padding: 0;
+
+main, details, summary, aside, figcaption, figure,
+header, footer, nav, menu, section, article {
+	display: block;                      // Prevents layouts from breaking on IE 8-11 & Firefox
 }
-li {
-	display: block;
-}
-h1, h2, h3, h4, h5, h6, p {
-	font-size: inherit;
-}
-strong {
-	font-weight: bold;
-}
-a, button {
-	color: inherit;
-	text-decoration: none;
+
+/*==================================
+ Link and button resets
+===================================*/
+
+a {
+	text-decoration: none;               // Removing underlined links since the dawn of time.
 }
 button {
-	overflow: visible;
-	border: 0;
 	font: inherit;
 	letter-spacing: inherit;
+	line-height: inherit;
+	-webkit-font-smoothing: inherit;     // Fix buggy inheritance
+	letter-spacing: inherit;
 	background: none;
-	cursor: pointer;
-	-webkit-font-smoothing: inherit;
-
-	&:focus {
-		outline: 0;
-	}
+	border: 0;                           // Reset the native appearance in all browsers
+	cursor: pointer;                     // UX improvement
+	overflow: visible;                   // IE 8-11 defaults to overflow: hidden
 }
-::-moz-focus-inner {
+::-moz-focus-inner {                     // Fix Firefox button display
 	padding: 0;
 	border: 0;
 }
-img {
-	max-width: 100%;
-	height: auto;
-	border: 0;
+
+/*==================================
+ Form resets
+===================================*/
+
+input, select, textarea {
+	max-width: 100%;                     // Make sure forms can't break out of their containers
+}
+textarea {
+	resize: vertical;                    // Make sure textareas can't be resized horizontally to break out of containers
+}
+[type=submit] {
+	-webkit-appearance: none;            // Get rid of automatic button styling in iOS Safari
+}
+[type="search"] {
+	-webkit-appearance: textfield;       // Safari 8+ fixes for search fields
+
+	&::-webkit-search-cancel-button, &::-webkit-search-decoration {
+		-webkit-appearance: none;        // Remove OSX Safari/Chrome inner padding/search cancel button, due to clipping
+	}
+}
+[type="checkbox"], [type="radio"] {
+	padding: 0;                          //Remove excess padding in IE 8-10.
 }

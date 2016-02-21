@@ -1,0 +1,55 @@
+/* Masthead */
+
+.site-header {
+	text-align: center;
+	color: $color-white;
+	background-color: $color-primary;
+	@include background-cover;
+}
+.site-header__masthead {
+	min-height: 12em;
+	padding: 5%;
+	
+	h1 {
+		margin-bottom: .5em;
+		font-size: 2.8em;
+
+		@media (min-width: $mq-small) {
+			font-size: 4.2em;
+		}
+	}
+}
+
+.site-header__subnav {
+	margin: 0 auto;
+	padding-left: 0;
+	font-size: .9em;
+	font-weight: 600;
+	letter-spacing: .08em;
+	line-height: 2.8;
+	text-transform: uppercase;
+	background-color: $color-primary;
+
+	li {
+		display: block;
+
+		@media (min-width: $mq-xsmall) {
+			display: inline-block;
+			margin: 0 .5em;
+		}
+	}
+
+	a {
+		display: inline-block;
+		padding: 0 1em;
+		transition: background-color .3s ease-out;
+
+		@media (max-width: $mq-xsmall) {
+			display: block;
+		}
+	}
+
+	a:hover, a:focus, .is-current {
+		background-color: $color-secondary;
+	}
+}

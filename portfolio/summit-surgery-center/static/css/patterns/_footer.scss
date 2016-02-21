@@ -1,0 +1,77 @@
+.site-footer {
+	font-size: .8em;
+	color: $color-white;
+	background-color: $color-secondary;
+
+	a {
+		&:hover, &:focus {
+			outline: 0;
+			opacity: .6;
+			will-change: opacity;
+		}
+	}
+
+	ul {
+		padding-left: 0;
+		letter-spacing: .05em;
+		line-height: 1.9;
+		list-style-type: none;
+
+		strong {
+			font-size: 1.2em;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+
+	svg {
+		width: 1.8em;
+		height: 1.8em;
+		margin-right: 1em;
+		margin-left: -.5em;
+		fill: $color-white;
+	}
+
+	blockquote {
+		margin-top: 0;
+	}
+
+	.u-container {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	// These are unusually small columns, so break them down a bit earlier
+	@media (min-width: $mq-xsmall) and (max-width: $mq-small) {
+		.u-col-2x, .u-col-3x {
+			width: 33.333333%;
+			margin-left: 0;
+		}
+		.u-col-5x {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+
+	.slick-slider {
+		overflow: hidden;
+	}
+	.slick-slide {
+		float: left;
+		margin: 0;
+
+		&:focus {
+			outline: 0;
+		}
+	}
+}
+
+.site-footer__legal {
+	padding: 2em;
+	font-size: .9em;
+	font-weight: 400;
+	letter-spacing: .1em;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: $color-primary;
+}

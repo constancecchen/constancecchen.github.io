@@ -1,0 +1,149 @@
+/* Navigation bar & menu */
+
+.site-nav {
+	height: 4.5em;
+	line-height: 4.5em;
+	text-align: right;
+	padding: 0 5%;
+
+	@media (min-width: $mq-xsmall) {
+		height: 6.25em;
+		line-height: 6.25em;
+		text-align: center;
+	}
+
+	a, button {
+		&:hover, &:focus {
+			outline: 0;
+			opacity: .6;
+			will-change: opacity;
+		}
+	}
+}
+
+.site-nav__menu-toggle {
+	position: absolute;
+	left: 5%;
+	font-size: 1.1em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.site-nav__menu-icon {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	height: 3px;
+	width: 1.5em;
+	margin-top: -3px;
+	margin-right: .8em;
+	background-color: $color-white;
+
+	&:before, &:after {
+		content: '';
+		display: block;
+		position: absolute;
+		height: 3px;
+		width: 100%;
+		background-color: $color-white;
+	}
+	&:before {
+		top: -8px;
+	}
+	&:after {
+		top: 8px;
+	}
+}
+
+.site-nav__logo {
+	width: 10em;
+	vertical-align: middle;
+
+	@media (min-width: $mq-xsmall) {
+		width: 17em;
+	}
+}
+
+/* Off-screen menu */
+
+.site-nav__overlay {
+	z-index: 99999;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0, .4);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .3s linear, visibility .3s linear;
+
+	&.is-open {
+		opacity: 1;
+		visibility: visible;
+		will-change: opacity;
+	}
+}
+.site-nav__menu {
+	width: 24em;
+	max-width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 1em 1.5em 2em 3em;
+	font-size: .9em;
+	font-weight: 300;
+	letter-spacing: .08em;
+	line-height: 1.9;
+	list-style-type: none;
+	text-align: left;
+	background-color: $color-primary;
+	transform: translate3d(-100%,0,0);
+	transition: transform .4s ease-out;
+	transition-delay: .2s;
+
+	&.is-open {
+		transform: translate3d(0,0,0);
+		// Normally I'd just use transformX & will-change: transform,
+		// but Firefox seems to chug on will-change :(
+	}
+
+	li {
+		text-transform: uppercase;
+	}
+	ul {
+		margin: .2em auto;
+		padding-left: 1em;
+		list-style-type: none;
+	}
+	ul li, em {
+		font-style: italic;
+		text-transform: none;
+	}
+	hr {
+		width: 9em;
+		margin: 2.5em 0;
+		border-top: 1px solid $color-white;
+	}
+	strong {
+		font-weight: 700;
+	}
+}
+.site-nav__menu-heading {
+	display: inline-block;
+	margin: 0 auto 2em;
+	padding-bottom: .5em;
+	font-size: inherit;
+	border-bottom: 1px solid $color-white;
+}
+.site-nav__menu-logo {
+	position: relative;
+	left: -1.5em;
+	display: block;
+	width: 10em;
+	margin: 2.5em auto 0;
+}
+.site-nav__menu-close {
+	width: 1.5em;
+	height: 2em;
+	font-size: 1.2em;
+}

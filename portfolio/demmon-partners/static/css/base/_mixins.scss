@@ -1,0 +1,28 @@
+/* Prefix mixins - not comprehensive, feel free to add more if needed */
+
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	        transition: $args;
+}
+
+@mixin transform($args...) {
+	-webkit-transform: $args;
+	    -ms-transform: $args;
+	        transform: $args;
+}
+
+/* Utility mixins */
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin unstyled-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}

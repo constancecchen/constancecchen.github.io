@@ -1,4 +1,23 @@
-/* Commonly used mixins */
+/*==================================
+ Utility/helper classes
+===================================*/
+
+.u-print-only {
+	display: none;
+
+	@media print {
+		display: initial !important;
+	}
+}
+.u-print-hidden {
+	@media print {
+		display: none !important;
+	}
+}
+
+/*==================================
+ Commonly used mixins
+===================================*/
 
 @mixin clearfix {
 	&:after {
@@ -8,45 +27,10 @@
 	}
 }
 
-@mixin transition($args...) {
-	-webkit-transition: $args;
-	        transition: $args;
-}
-
-@mixin transform($args...) {
-	-webkit-transform: $args;
-	    -ms-transform: $args;
-	        transform: $args;
-}
-
-/* Breakpoint mixin - when using this mixin, be aware that
- * it's mobile-first (i.e. uses min-width instead of max-width).
- * In other words, the base CSS is for phones, and something like
- * `breakpoint(tablet)` means "For tablets screens & above".
- */
-
-@mixin breakpoint($point) {
-    $converted: map-get($breakpoint-sizes, $point);
-    @media (min-width: $converted) {
-		@content
-	}
-}
-
-/* A mixin for <ul>s that visually should not appear like
- * the standard vertical bulleted list (e.g. navs or menus)
- * I've excluded the <li> styling from this, as there's too
- * much visual uncertainty over using inline-block vs floats.
- */
-
-@mixin horizontal-list {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-
-/* A word-wrap mixin useful for user-generated input
- * or content. Will break up long strings such as URLs.
- */
+/*==================================
+ A word-wrap mixin useful for user-generated input
+ or content. Will break up long strings such as URLs.
+===================================*/
 
 @mixin word-wrap {
 	word-wrap: break-word;
@@ -55,9 +39,10 @@
 	        hyphens: auto;
 }
 
-/* A text truncation mixin useful for one-line text that
- * needs to be cut off into a trailing ... ellipsis.
- */
+/*==================================
+ A text truncation mixin useful for one-line text that
+ needs to be cut off into a trailing ... ellipsis.
+===================================*/
 
 @mixin ellipsis {
 	overflow: hidden;

@@ -1,0 +1,79 @@
+/* A fairly basic page template.
+ * Good for informational pages. Used for Patient Services pages.
+ */
+
+.patient-services .site-header {
+	background-image: url('../images/patient-services-mast-bg.jpg');
+}
+
+.patient-services__content {
+	@media (min-width: $mq-small) {
+		margin-right: 2em;
+		margin-left: 2em;
+	}
+
+	h2, h3, h4 {
+		font-family: $font-sans-serif;
+		font-size: 1.1em;
+		font-weight: 600;
+		line-height: 1.4;
+		text-transform: uppercase;
+		margin-top: 2.5em;
+	}
+
+	a {
+		color: $color-primary;
+		font-weight: 600;
+
+		&:hover, &:focus {
+			opacity: .7;
+			will-change: opacity;
+		}
+	}
+
+	[class*="u-col-"] {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	& + * {
+		// If two sections are stacked on top of each other, add some spacing
+		margin-top: 1em;
+	}
+}
+
+/* Specific sections */
+
+.patient-forms {
+	ul {
+		padding-left: 0;
+		list-style-type: none;
+	}
+	li {
+		margin: .5em auto;
+
+		a {
+			display: inline-block;
+			margin-left: .4em;
+			font-weight: 400;
+			font-style: italic;
+			text-transform: lowercase;
+		}
+	}
+}
+
+.patient-faq {
+	h2, h3, h4 {
+		& + p {
+			margin-top: 0;
+		}
+	}
+}
+
+/* Add a little more whitespace to page headings on mobile */
+
+@media (max-width: $mq-xsmall) {
+	.patient-services h1 {
+		margin: .7em auto 0;
+	}
+}

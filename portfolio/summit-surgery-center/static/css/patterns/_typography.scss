@@ -1,0 +1,151 @@
+/* Responsive typography sizing */
+
+body {
+	position: relative;
+	min-height: 100vh;
+	font-family: $font-sans-serif;
+	font-size: 95%;
+	font-weight: 300;
+	line-height: 1.6;
+	color: $color-black;
+
+	@media (min-width: $mq-xsmall) {
+		font-size: 100%;
+	}
+	@media (min-width: $mq-small) {
+		font-size: 105%;
+	}
+	@media (min-width: $mq-medium) {
+		font-size: 110%;
+	}
+	@media (min-width: $mq-large) {
+		font-size: 130%;
+	}
+	@media (min-width: $mq-xlarge) {
+		font-size: 150%;
+	}
+}
+
+/* Headlines */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-serif;
+	font-weight: 400;
+	line-height: 1;
+}
+h1 {
+	margin: .2em auto;
+	font-size: 2em;
+
+	@media (min-width: $mq-small) {
+		font-size: 2.8em;
+	}
+}
+h2 {
+	margin: .2em auto;
+	font-size: 1.8em;
+
+	@media (min-width: $mq-small) {
+		font-size: 2.5em;
+	}
+}
+h3 {
+	margin: .4em 0;
+	font-size: 1.6em;
+
+	@media (max-width: $mq-small) {
+		font-size: 2em;
+	}
+}
+h4 {
+	margin: .6em auto;
+	font-size: 1.4em;
+
+	@media (max-width: $mq-small) {
+		font-size: 1.6em;
+	}
+}
+h5 {
+	margin: .8em auto;
+	font-size: 1.2em;
+}
+h6 {
+	margin: 1em auto;
+	font-size: 1em;
+}
+
+.heading-decorative {
+	font-style: italic;
+	text-transform: lowercase;
+}
+.heading-large, h1 strong, h2 strong, h3 strong {
+	display: block;
+	margin-bottom: .5em;
+	font-size: 1.5em;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.heading-afterline {
+	@include clearfix;
+
+	// Requires an extra span wrapper to work properly
+	span {
+		z-index: 1;
+		position: relative;
+		display: inline-block;
+		float: left;
+		padding-right: .3em;
+		background-color: $color-white;
+	}
+
+	// Line
+	&:after {
+		content: "";
+		position: relative;
+		top: -.2em;
+		display: block;
+		height: 1px;
+		background-color: $color-black;
+	}
+}
+
+/* Other typography, quotes, etc. */
+
+strong {
+	font-weight: 600;
+}
+
+blockquote {
+	margin: 1em auto;
+	font-family: $font-serif;
+	font-size: 1.5em;
+	font-style: italic;
+	text-align: center;
+}
+cite {
+	display: block;
+	margin-top: .3em;
+	font-family: $font-sans-serif;
+	font-style: normal;
+	font-size: .8em;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+p, h1, h2, h3, h4, h5, h6, figure, blockquote {
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+/* Colors */
+
+a, button {
+	transition: opacity .3s ease-out, color .3s ease-out;
+}
+
+::selection {
+	color: $color-white;
+	background-color: $color-primary;
+}

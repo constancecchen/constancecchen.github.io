@@ -1,0 +1,124 @@
+/*==================================
+ Filter toggles
+ Styling & input checkbox UX
+===================================*/
+
+/*==================================
+ "Hide" the actual input checkbox
+ (we'll create a new one via the label's pseudo-elements)
+===================================*/
+
+.filter {
+	position: absolute;
+	left: -9999px;
+}
+
+/*==================================
+ Unchecked state
+===================================*/
+
+.filter__label {
+	display: inline-block;
+	position: relative;
+	margin: .5em .2em 0;
+	padding: .35em .6em .2em;
+	font-size: .75em;
+	color: #777;
+	background-color: #ccc;
+	cursor: pointer;
+	opacity: .7;
+	will-change: opacity;
+	transition:
+		opacity .3s ease-out,
+		color .2s ease-out, background-color .2s ease-out;
+
+	@media (min-width: $mq-medium) {
+		font-size: .9em;
+	}
+	@media print {
+		display: none;
+	}
+
+	// Box
+	&:before {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		width: .9em;
+		height: .9em;
+		margin-right: .5em;
+		background-color: $white;
+	}
+	// Checkmark
+	&:after {
+		content: '';
+		position: absolute;
+		top: .7em;
+		left: .65em;
+		display: inline-block;
+		width: .75em;
+		height: .8em;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 16'%3E%3Cpath d='M3.432,6.189 C3.824,5.798 4.455,5.798 4.847,6.189 L6.968,8.31 L13.147,2.131 C13.531,1.747 14.157,1.753 14.548,2.144 L16.67,4.266 C17.06,4.657 17.066,5.284 16.684,5.666 L7.662,14.687 C7.278,15.07 6.651,15.064 6.261,14.673 L1.311,9.723 C0.92,9.333 0.92,8.7 1.311,8.31 L3.432,6.189 Z' fill='%2359c'/%3E%3C/svg%3E");
+		background-position: center;
+		background-size: contain;
+		opacity: 0;
+		transition: opacity .2s ease-in;
+		will-change: opacity;
+	}
+}
+
+/*==================================
+ Checked state
+===================================*/
+
+.filter:checked + .filter__label {
+	color: $white;
+	background-color: $blue;
+	opacity: .75;
+
+	&:after {
+		opacity: 1;
+	}
+}
+
+
+/*==================================
+ Hover/Focus state
+===================================*/
+
+.filter:focus + .filter__label, .filter__label:hover {
+	opacity: 1 !important;
+}
+
+
+/*==================================
+ A class for the container/parent section, styling postioning & appearance
+===================================*/
+
+.has-filters {
+	// Add some vertical spacing on mobile
+	@media (max-width: $mq-medium) {
+		.section__heading {
+			margin-bottom: 0;
+		}
+		.skills {
+			margin-top: 1.5em;
+		}
+		.experiences, .portfolios {
+			margin-top: 2em;
+		}
+	}
+
+	// For larger screens -
+	// I can't wrap the filter inputs into a floated div,
+	// so I'm using flex to do it instead
+	@media screen and (min-width: $mq-medium) {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+
+		.section__heading {
+			flex-grow: 1;
+		}
+	}
+}

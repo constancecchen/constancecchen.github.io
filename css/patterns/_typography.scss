@@ -1,27 +1,66 @@
-/* Typography */
+/*==================================
+ Typography
+===================================*/
 
-html, body {
-	font: 300 1em/1.7 $junction;
+body {
+	font-family: $junction;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1.6;
 	color: $black;
+
+	@media (min-width: $mq-medium) {
+		font-size: 1.25vw;
+	}
+
+	@media print {
+		font-size: .9em;
+		-webkit-print-color-adjust: exact;
+	}
+}
+
+/*==================================
+ Opinionated margin styling
+===================================*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1em;
+	margin: 0;
+}
+
+ul, ol, blockquote {
+	margin: 0 auto;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+/*==================================
+ Links & Colors
+===================================*/
+
+a {
+	color: $blue;
+	font-weight: 400;
+	border-bottom: 2px solid transparent;
+	transition: border-color .4s, color .4s, fill .4s;
+
+	&:focus, &:hover {
+		border-bottom: 2px solid currentColor;
+	}
+}
+
+svg, symbol {
+	fill: currentColor;
+}
+a svg {
+	transition: fill .4s ease-in;
 }
 
 ::selection, ::-moz-selection {
 	background: $blue;
 	color: $white;
-}
-
-a {
-	@include transition(all .4s);
-
-	color: $blue;
-	font-weight: 400;
-	border-bottom: 2px solid transparent;
-
-	&:focus, &:hover {
-		border-bottom: 2px solid $blue;
-	}
-}
-
-p {
-	margin: 0 0 1em;
 }

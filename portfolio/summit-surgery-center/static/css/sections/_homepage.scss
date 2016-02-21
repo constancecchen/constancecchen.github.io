@@ -1,0 +1,105 @@
+/* Homepage masthead */
+
+.home {
+	.site-header {
+		background-image: url('../images/home-mast-bg-sm.jpg');
+
+		@media (min-width: $mq-small) {
+			background-image: url('../images/home-mast-bg.jpg');
+		}
+	}
+	.site-header__masthead {
+		padding: 1em 5% 6em;
+		
+		@media (min-width: $mq-small) {
+			padding: 6em 5% 17em;
+		}
+	}
+}
+
+/* Slideout with more information */
+
+.home__accordion {
+	display: none;
+	border-top: 1px solid $color-black;
+
+	@media (min-width: $mq-medium) {
+		padding: 1.5em 2em 0;
+	}
+
+	h2, h3, h4 {
+		margin: 2em auto .5em;
+		font-family: $font-sans-serif;
+		font-size: 1.1em;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	ul {
+		margin-top: 0;
+	}
+	
+	[class*="u-col-"] {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+/* Row of image thumbnails linking to other pages */
+
+.home__thumbnail {
+	position: relative;
+	display: table;
+	width: 100%;
+	height: 18em;
+	padding: 1em;
+	text-align: center;
+	color: $color-white;
+	background-color: $color-primary;
+	@include background-cover;
+
+	@media (min-width: $mq-xsmall) {
+		width: 33.333334%;
+		float: left;
+	}
+
+	&:before {
+		z-index: 0;
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		display: block;
+		background-color: $color-secondary;
+		opacity: 0;
+		transition: opacity .3s ease-out;
+	}
+
+	&:hover, &:focus {
+		&:before {
+			opacity: .75;
+			will-change: opacity;
+		}
+	}
+
+	& > * {
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+// Background images can also be inlined, instead
+.home__thumbnail {
+	&:nth-child(1) {
+		background-image: url('../images/home-thumbnail-1.jpg');
+	}
+	&:nth-child(2) {
+		background-image: url('../images/home-thumbnail-2.jpg');
+	}
+	&:nth-child(3) {
+		background-image: url('../images/home-thumbnail-3.jpg');
+	}
+}

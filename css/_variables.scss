@@ -1,9 +1,13 @@
-// Font
+/*==================================
+ Fonts
+===================================*/
 
 $junction:  'Junction', Helvetica, Arial, sans-serif;
 $delicious: 'Delicious', Helvetica, Arial, sans-serif;
 
-// Colors
+/*==================================
+ Colors
+===================================*/
 
 $white:      #fff;
 $black:      #444;
@@ -12,15 +16,16 @@ $blue:       #59c;
 $light-blue: #7cc;
 $dark-blue:  #022539;
 
-// Layout
+/*==================================
+ Breakpoints
+===================================*/
 
-$main-width:    1000px;
-$sidebar-width: 300px;
+$mq-small:  480px;
+$mq-medium: 768px;
+$mq-large:  1200px;
 
-// Mobile-First Breakpoints
+/*==================================
+ Layout
+===================================*/
 
-$breakpoint-sizes: (
-	'small':   480px,
-	'medium':  768px,
-	'large':   1200px,
-);
+$sidebar-width: 24%;

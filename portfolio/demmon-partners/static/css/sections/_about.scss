@@ -1,0 +1,42 @@
+.page-header--about {
+	background-image: url('../img/about/about_header.jpg');
+}
+.page-header__teaser--about {
+	background-color: rgba($dark-purple, .9);
+
+	&:after {
+		background-image: url('../img/about/about_arrow.png');
+	}
+}
+
+.about-blurb {
+	padding: 7em 2em;
+	background-image: url('../img/diamond_bg_gray.png');
+	background-position: center;
+	box-shadow: inset 0 10px 8px -8px rgba($dark-purple, .3);
+
+	@media (min-width: $breakpoint-large) {
+		padding: 13em 11em 14em;
+	}
+
+	&__headline {
+		max-width: 1100px;
+		margin: 0 auto 1em;
+		font-size: 3em;
+		font-weight: bold;
+		line-height: 1.5;
+		color: $orange;
+
+		@media (min-width: $breakpoint-large) {
+			margin-bottom: 3em;
+		}
+	}
+	&__copy {
+		max-width: 1100px;
+		margin: 0 auto;
+		font-size: 2.2em;
+		font-weight: bold;
+		line-height: 1.7;
+		letter-spacing: .05em;
+	}
+}

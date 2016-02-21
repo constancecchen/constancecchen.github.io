@@ -1,0 +1,368 @@
+/* Custom visual breakpoints for the team grid (vs device breakpoints */
+
+$breakpoint-2-col: 640px;
+$breakpoint-3-col: 1100px;
+$bio-height-2-col: 40em;   // The (static) height of the accordion when in responsive 2-column mode
+
+/* Page header */
+
+.page-header--team {
+	background-image: url('../img/team/team_header.jpg');
+}
+.page-header__teaser--team {
+	background-color: rgba($light-purple, .9);
+
+	&:after {
+		background-image: url('../img/team/team_arrow.png');
+	}
+}
+
+/* Section headers */
+
+.team-header {
+	padding: 4em 5em 3.2em;
+	background-color: $light-purple;
+	background-image: url('../img/diamond_bg_light-purple.png');
+
+	&__heading {
+		margin: 0 auto;
+		font-size: 3.4em;
+		font-weight: bold;
+		letter-spacing: .05em;
+		text-transform: uppercase;
+	}
+}
+
+/* Team sections & responsive row clearing */
+
+.team {
+	background-color: $dark-purple;
+}
+
+// Kind of hacky :(
+.team-clearfix--2-col {
+	@media (min-width: $breakpoint-2-col) and (max-width: $breakpoint-3-col) {
+		display: block;
+		@include clearfix;
+	}
+}
+.team-clearfix--3-col {
+	@media (min-width: $breakpoint-3-col) {
+		@include clearfix;
+		display: block;
+	}
+}
+
+/* Single team member columns */
+
+.team-member {
+	@include transition(margin-bottom .25s ease-in);
+
+	position: relative;
+	min-height: 11em;
+	margin: 0;
+	line-height: 0;
+
+	&:hover, &:focus {
+		.team-member__caption:before, .team-member__caption:after {
+			right: 3em;
+		}
+	}
+
+	&__thumbnail {
+		position: relative;
+		margin: 0;
+		cursor: pointer;
+	}
+	&__picture {
+		width: 100%;
+	}
+
+	&__byline {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin: 0;
+		padding: 2.5em 8em 2.5em 3em;
+		line-height: 1.2;
+		color: $white;
+		background-color: rgba($dark-purple, .9);
+
+		// Right pointing arrow
+
+		&:after, &:before {
+			@include transition (right .2s ease-out);
+
+			content: '';
+			position: absolute;
+			right: 3em;
+			top: 50%;
+			display: block;
+			height: .5em;
+			width: 2.5em;
+			margin-top: -.25em;
+			background-color: $white;
+
+			@media (min-width: $breakpoint-3-col) {
+				right: 4em;
+			}
+		}
+		&:before {
+			@include transform(translateY(-.75em) rotate(45deg));
+		}
+		&:after {
+			@include transform(translateY(.75em) rotate(-45deg));
+		}
+	}
+	&__name {
+		margin: 0 auto;
+		font-size: 3em;
+		letter-spacing: .05em;
+		text-transform: uppercase;
+	}
+	&__role {
+		margin: 0 auto;
+		font-size: 2em;
+		letter-spacing: .05em;
+		text-transform: uppercase;
+		color: $orange;
+	}
+
+	// Responsive wrangling
+
+	@media (max-width: $breakpoint-2-col) {
+		width: 100%; // Override the regular grid breakpoint.
+	}
+	@media (min-width: $breakpoint-2-col) and (max-width: $breakpoint-3-col) {
+		width: 50%;
+
+		&.is-expanded {
+			margin-bottom: $bio-height-2-col;
+		}
+
+		// Position expanded biographies - type is div elements
+		&:nth-of-type(odd) .team-member__accordion {
+			left: 0;
+		}
+		&:nth-of-type(even) .team-member__accordion {
+			right: 0;
+		}
+	}
+	@media (min-width: $breakpoint-3-col) {
+		&.is-expanded {
+			margin-bottom: 44.4%;
+		}
+
+		// Position expanded biographies
+		&:nth-of-type(3n+1) .team-member__accordion {
+			left: 0;
+		}
+		&:nth-of-type(3n+2) .team-member__accordion {
+			left: -100%;
+		}
+		&:nth-of-type(3n+3) .team-member__accordion {
+			right: 0;
+		}
+	}
+}
+
+/* Expanded Bio */
+
+.team-member__accordion {
+	display: none;
+	position: relative;
+	background-color: $light-gray;
+
+	@media (min-width: $breakpoint-2-col) {
+		position: absolute;
+		top: 100%;
+		width: 200%;
+	}
+	@media (min-width: $breakpoint-3-col) {
+		width: 300%;
+	}
+}
+.team-member__accordion-close {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	font-size: .75em;
+	width: 4em;
+	height: 4em;
+	cursor: pointer;
+
+	@media (min-width: $breakpoint-3-col) {
+		top: 3em;
+		right: 3.5em;
+		font-size: 1em;
+	}
+
+	// "X" symbol
+	&:after, &:before {
+		@include transition (background-color .2s ease-in);
+
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: 0;
+		display: block;
+		height: .5em;
+		width: 4em;
+		margin-top: -.25em;
+		background-color: $dark-purple;
+	}
+	&:before {
+		@include transform(rotate(45deg));
+	}
+	&:after {
+		@include transform(rotate(-45deg));
+	}
+
+	&:hover, &:focus {
+		&:after, &:before {
+			background-color: $orange;
+		}
+	}
+}
+
+/* Expanded bio picture - only show on larger screens */
+
+.team-member__expanded-picture {
+	display: none;
+	line-height: 0;
+
+	@media (min-width: $breakpoint-3-col) {
+		display: block;
+	}
+}
+
+/* Expanded bio - text column */
+
+.team-member__info {
+	position: relative;
+	padding: 3.5em 2em 2em;
+	line-height: 1.33;
+
+	@media (max-width: $breakpoint-3-col) {
+		width: 100%;
+	}
+	@media (min-width: $breakpoint-2-col) and (max-width: $breakpoint-3-col) {
+		height: $bio-height-2-col;
+	}
+	@media (min-width: $breakpoint-large) {
+		padding: 8% 3% 0;
+	}
+
+	// Right-facing triangle
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 100%;
+		width: 0;
+		height: 0;
+		margin-top: -6em;
+		border-style: solid;
+		border-width: 2em 0 2em 3em;
+		border-color: transparent transparent transparent $light-gray;
+	}
+}
+.team-member__expanded-name {
+	margin: 0 auto;
+	font-size: 2.8em;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+}
+.team-member__expanded-role {
+	margin: 0 auto 1.2em;
+	padding-bottom: .3em;
+	font-size: 1.8em;
+	color: $orange;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+	border-bottom: 2px solid #d5d1cf;
+}
+.team-member__bio {
+	font-size: 1.8em;
+	color: $light-purple;
+	letter-spacing: .03em;
+}
+
+
+/* Filler section if teams aren't in multiples of threes.
+ * Can comfortably stretch to 2 columns (using .u-col-8x)
+ */
+
+.team-filler {
+	@include transition (background-color .3s ease-in);
+
+	position: relative;
+	display: block;
+	background-color: $dark-purple;
+	min-height: 30em;
+
+	@media (max-width: $breakpoint-2-col) {
+		width: 100%;
+	}
+	@media (min-width: $breakpoint-2-col) and (max-width: $breakpoint-3-col) {
+		width: 50%;
+		height: 0;
+		min-height: 0;
+		padding-bottom: 60.5%;
+	}
+	@media (min-width: $breakpoint-3-col) {
+		height: 0;
+		min-height: 0;
+		padding-bottom: 40.4%;
+	}
+
+	&:hover, &:focus {
+		background-color: $light-purple;
+
+		.properties-link:after, .properties-link:before {
+			left: 105%;
+		}
+	}
+}
+.properties-link {
+	@include transform(translateX(-.5em));
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	display: block;
+	max-width: 70%;
+	margin: -1.5em auto 0;
+	font-size: 3.2em;
+	font-weight: bold;
+	letter-spacing: .05em;
+	line-height: 1.25;
+	text-align: center;
+	text-transform: uppercase;
+	color: $white;
+
+	// Right-facing arrow
+	&:after, &:before {
+		@include transition (left .2s ease-out);
+
+		content: '';
+		position: absolute;
+		left: 100%;
+		top: 50%;
+		display: block;
+		font-size: .31em;
+		height: .5em;
+		width: 2.5em;
+		margin-top: -.25em;
+		background-color: $white;
+	}
+	&:before {
+		@include transform(translateY(-.75em) rotate(45deg));
+	}
+	&:after {
+		@include transform(translateY(.75em) rotate(-45deg));
+	}
+}

@@ -1,0 +1,155 @@
+/*==================================
+ Single portfolio pages
+===================================*/
+
+.portfolio-page {
+	@media (min-width: $mq-medium) {
+		@include clearfix;
+	}
+}
+
+/*==================================
+ Project name, description, links
+===================================*/
+
+.portfolio-description {
+	margin-bottom: 2em;
+
+	@media (min-width: $mq-medium) {
+		float: right;
+		width: 57%;
+		padding-left: 2em;
+	}
+
+	&__heading {
+		font-size: 1.6em;
+		font-weight: 400;
+		margin-bottom: .3em;
+	}
+
+	&__tag {
+		display: inline-block;
+		margin-right: .3em;
+		margin-bottom: 1.3em;
+		padding: .2em .5em 0;
+		font-size: .8em;
+		font-weight: 300;
+		letter-spacing: .03em;
+		color: #fff;
+		background-color: lighten($blue, 10%);
+		text-transform: uppercase;
+	}
+
+	&__ctas {
+		text-align: center;
+	}
+}
+
+/*==================================
+ Full-page screenshots previews,
+ wrapped in a scrollable 'window'
+===================================*/
+
+.portfolio-images {
+	@media (min-width: $mq-medium) {
+		float: left;
+		width: 43%;
+	}
+}
+
+.portfolio-images__bar {
+	@include clearfix;
+	height: 1.6em;
+	padding: 0 .5em;
+	line-height: 1.5;
+	background-color: lighten($gray, 15%);
+	border-radius: .5em .5em 0 0;
+}
+.portfolio-images__bar-exit {
+	position: relative;
+	top: .1em;
+	float: right;
+	padding: 0 .2em;
+	color: $black;
+	border: 0;
+	opacity: .5;
+	transform: scale(1.5);
+	transition: opacity .3s;
+	
+	&:focus, &:hover {
+		border: 0;
+		opacity: 1;
+	}
+}
+
+.portfolio-images__body {
+	position: relative;
+	line-height: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border: 2px solid lighten($gray, 15%);
+	
+	@media (min-width: $mq-medium) {
+		max-height: 75vh; // Fallback
+		max-height: calc(100vh - 8em);
+		overflow-y: scroll; // Slick needs this for height/width calculations
+	}
+
+	img {
+		display: block;
+		width: 100%;
+	}
+	img:not(:first-of-type) {
+		display: none; // If Slick fails for any reason, show just the first screenshot
+	}
+
+	// Slick slider functionality
+	.slick-slide {
+		display: block !important;
+		float: left;
+		outline: 0;
+	}
+	.slick-list {
+		overflow: hidden;
+	}
+	.slick-track {
+		position: relative;
+	}
+	.slick-arrow {
+		top: -1em;
+		left: 1em;
+		position: absolute;
+	}
+}
+
+// Custom Slick arrows
+.slider-arrow {
+	vertical-align: middle;
+	height: 1.2em;
+	width: 1.2em;
+	padding: 0;
+	opacity: .5;
+	transition: opacity .3s;
+
+	&:hover, &:focus {
+		opacity: 1;
+		outline: 0;
+	}
+
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 50%;
+		width: 50%;
+	}
+}
+.slider-next:before {
+	border-right: 2px solid $black;
+	border-bottom: 2px solid $black;
+	transform: rotate(-45deg);
+}
+.slider-prev:before {
+	border-left: 2px solid $black;
+	border-bottom: 2px solid $black;
+	transform: rotate(45deg);
+}

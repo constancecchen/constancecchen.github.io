@@ -1,0 +1,28 @@
+/* A 'contact' page template - used for pages with forms, maps */
+
+.contact {
+	background-image: url('../images/contact-page-bg.jpg');
+	@include background-cover;
+
+	.site-header {
+		background-color: transparent;
+	}
+}
+
+.contact__content {
+	padding: 2em;
+	color: $color-white;
+	background: rgba($color-primary, .9);
+
+	@media (min-width: $mq-small) {
+		padding: 4em;
+	}
+
+	.btn--link {
+		color: $color-white;
+	}
+
+	[class*="u-col-"] {
+		margin: 0;
+	}
+}

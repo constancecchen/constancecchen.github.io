@@ -1,0 +1,26 @@
+input, select, textarea {
+	padding: .2em .6em;
+	font-family: $font-sans-serif;
+	font-size: .9em;
+	font-weight: 400;
+	letter-spacing: inherit;
+	line-height: inherit;
+	color: $color-black;
+	background-color: $color-white;
+	border: 0;
+	border-radius: 0;
+}
+
+label {
+	font-weight: 400;
+}
+
+::placeholder {
+	color: $color-black;
+	font-style: italic;
+	opacity: 1;
+}
+
+[type=submit], select {
+	cursor: pointer;
+}

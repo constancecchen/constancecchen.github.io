@@ -1,0 +1,72 @@
+.btn {
+	display: inline-block;
+	padding: .6em .9em;
+	font-family: $font-sans-serif;
+	font-weight: 600;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	transition: color .3s ease-out, background-color .3s ease-out;
+}
+
+/* Color modifiers */
+
+.btn--white {
+	color: $color-secondary;
+	background-color: $color-white;
+	
+	&:hover, &:focus {
+		color: $color-white;
+		background-color: $color-secondary;
+	}
+}
+
+.btn--primary {
+	color: $color-white;
+	background-color: $color-primary;
+	
+	&:hover, &:focus {
+		color: $color-primary;
+		background-color: $color-white;
+	}
+}
+
+.btn--secondary {
+	color: $color-white;
+	background-color: $color-secondary;
+	
+	&:hover, &:focus {
+		color: $color-secondary;
+		background-color: $color-white;
+	}
+}
+
+/* Size modifiers */
+
+.btn--small {
+	font-size: .8em;
+}
+
+.btn--large {
+	font-size: 1.2em;
+}
+
+/* A "learn more" or "read more" link */
+
+.btn--link {
+	padding: 0;
+	font-style: italic;
+	letter-spacing: .02em;
+	text-transform: none;
+	color: $color-primary;
+	transition: transform .2s ease-out;
+
+	&:after {
+		content: " \003e";
+	}
+
+	&:hover, &:focus {
+		outline: 0;
+		transform: translateX(.4em);
+		will-change: transform;
+	}
+}
