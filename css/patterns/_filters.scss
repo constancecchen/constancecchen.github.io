@@ -18,24 +18,21 @@
 ===================================*/
 
 .filter__label {
-	display: inline-block;
 	position: relative;
-	margin: .5em .2em 0;
+	display: inline-block;
+	margin: .8em .2em 0;
 	padding: .35em .6em .2em;
-	font-size: .75em;
+	font-size: .85em;
 	color: #777;
 	background-color: #ccc;
 	cursor: pointer;
 	opacity: .7;
 	will-change: opacity;
 	transition:
-		opacity .3s ease-out,
-		color .2s ease-out, background-color .2s ease-out;
+	opacity .3s ease-out,
+	color .2s ease-out, background-color .2s ease-out;
 
-	@media (min-width: $mq-medium) {
-		font-size: .9em;
-	}
-	@media print {
+	@media print, (max-width: $mq-medium) {
 		display: none;
 	}
 
@@ -53,7 +50,7 @@
 	&:after {
 		content: '';
 		position: absolute;
-		top: .7em;
+		top: .75em;
 		left: .65em;
 		display: inline-block;
 		width: .75em;
@@ -96,22 +93,6 @@
 ===================================*/
 
 .has-filters {
-	// Add some vertical spacing on mobile
-	@media (max-width: $mq-medium) {
-		.section__heading {
-			margin-bottom: 0;
-		}
-		.skills {
-			margin-top: 1.5em;
-		}
-		.experiences, .portfolios {
-			margin-top: 2em;
-		}
-	}
-
-	// For larger screens -
-	// I can't wrap the filter inputs into a floated div,
-	// so I'm using flex to do it instead
 	@media screen and (min-width: $mq-medium) {
 		display: flex;
 		flex-wrap: wrap;

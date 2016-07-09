@@ -3,7 +3,7 @@
 ===================================*/
 
 .portfolio-page {
-	@media (min-width: $mq-medium) {
+	@media (min-width: $mq-large) {
 		@include clearfix;
 	}
 }
@@ -15,7 +15,7 @@
 .portfolio-description {
 	margin-bottom: 2em;
 
-	@media (min-width: $mq-medium) {
+	@media (min-width: $mq-large) {
 		float: right;
 		width: 57%;
 		padding-left: 2em;
@@ -51,7 +51,7 @@
 ===================================*/
 
 .portfolio-images {
-	@media (min-width: $mq-medium) {
+	@media (min-width: $mq-large) {
 		float: left;
 		width: 43%;
 	}
@@ -89,7 +89,7 @@
 	overflow-x: hidden;
 	border: 2px solid lighten($gray, 15%);
 	
-	@media (min-width: $mq-medium) {
+	@media (min-width: $mq-large) {
 		max-height: 75vh; // Fallback
 		max-height: calc(100vh - 8em);
 		overflow-y: scroll; // Slick needs this for height/width calculations

@@ -9,8 +9,14 @@ body {
 	line-height: 1.6;
 	color: $black;
 
-	@media (min-width: $mq-medium) {
-		font-size: 1.25vw;
+	// Fluid Typography Formula:
+	// startFontSize + (endFontSize + startFontSize / 16) * (100vw - startWindowSize) / (endWindowSize - startWindowSize (unitless))
+	@media (min-width: $mq-large) {
+		font-size: calc(1em + .3125 * (100vw - #{$mq-large}) / 50);
+	}
+
+	@media (min-width: $mq-xlarge) {
+		font-size: 1.3125em;
 	}
 
 	@media print {

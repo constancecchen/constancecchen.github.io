@@ -3,7 +3,7 @@
 ===================================*/
 
 .sidebar {
-	padding: 3em 2em 1em;
+	padding: 3em 1em 1em;
 	font-size: .9em;
 	text-align: center;
 	color: $light-blue;
@@ -14,7 +14,7 @@
 	background-size: 100% auto;
 	overflow: auto;
 
-	@media (min-width: $mq-medium) {
+	@media (min-width: $mq-large) {
 		z-index: 2;
 		position: fixed;
 		top: 0;
@@ -72,6 +72,10 @@
 		max-width: 25em;
 		margin: 0 auto;
 
+		@media (min-width: $mq-large) {
+			max-width: 17em;
+		}
+
 		@media print {
 			float: left;
 			width: 50%;
@@ -102,7 +106,7 @@
 		display: inline-block;
 		margin: .5em auto 1em;
 
-		@media (min-width: $mq-medium) {
+		@media (min-width: $mq-large) {
 			max-width: 10em;
 		}
 
