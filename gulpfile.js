@@ -35,6 +35,8 @@ gulp.task("js", function() {
 /*----------------------------------------------
   Compile Dust templates into HTML
 -----------------------------------------------*/
+require("dustjs-linkedin").config.cache = false;
+
 gulp.task("html:index", function() {
   return gulp.src("templates/index.dust")
     .pipe(dust({
@@ -82,9 +84,9 @@ gulp.task("build", ["css", "js", "html:index", "html:portfolio"]);
 gulp.task("watch", ["build"], function() {
   gulp.watch("css/**/*.scss", ["css"]);
   gulp.watch("js/**/*.js", ["js"]);
+  gulp.watch("index.json", ["html:index"]);
+  gulp.watch("portfolio/**/index.json", ["html:portfolio"]);
   gulp.watch("templates/**/*.dust", ["html:index", "html:portfolio"]);
-  gulp.watch(["templates/index.dust", "index.json"], ["html:index"]);
-  gulp.watch(["portfolio/**/index.json", "portfolio/**/index.dust"], ["html:portfolio"]);
 });
 
 /*----------------------------------------------
