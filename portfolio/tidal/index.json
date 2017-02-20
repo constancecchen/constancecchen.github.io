@@ -1,0 +1,47 @@
+{
+  "title": "Tidal",
+  "tags": [
+    "Laravel",
+    "PSD to HTML"
+  ],
+  "description": "<p>Home of Tidal Labs, a digital marketing company I was proud to work at. Initially, our team built out a full web app with marketplace/user logic, but eventually transitioned over to a more traditional landing site.</p><p>I oversaw the Tidal site through multiple redesigns and revisions. Primarily I owned the front-end stack, wrote our CSS style guide, and provided input for UI/UX decisions - all while learning PHP/Laravel, contributing to the back-end, and collaborating with both designers and marketing content producers.</p>",
+  "buttons": [
+    {
+      "size": "full",
+      "text": "View live site",
+      "icon": "icon-link",
+      "link": "https://tid.al",
+      "newPage": true
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-1.jpg",
+      "alt": "Tidal Marketplace"
+    },
+    {
+      "src": "screenshot-2.jpg",
+      "alt": "Tidal Project Page"
+    },
+    {
+      "src": "screenshot-3.jpg",
+      "alt": "Tidal Project Page"
+    },
+    {
+      "src": "screenshot-4.jpg",
+      "alt": "Tidal Homepage"
+    },
+    {
+      "src": "screenshot-5.jpg",
+      "alt": "Tidal About Page"
+    },
+    {
+      "src": "screenshot-6.jpg",
+      "alt": "Tidal For Brands Page"
+    },
+    {
+      "src": "screenshot-7.jpg",
+      "alt": "Tidal For Creators Page"
+    }
+  ]
+}

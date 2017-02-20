@@ -1,0 +1,43 @@
+{
+  "title": "The Bold Look of Kohler",
+  "tags": [
+    "PHP",
+    "PSD to HTML"
+  ],
+  "description": "<p>An image-centric inspiration blog for Kohler, Wisconsin-based interior manufacturing brand. Features masonry moodboards, articles, and image carousels. I was particularly proud of this site, which was one of my first projects at Tidal where I owned both the front-end and back-end development.</p><p>I built out the site on our custom PHP/MongoDB CMS, implemented lightbox and carousel plugins, and wrote custom Javascript to interface with the faceted search navigation.</p>",
+  "buttons": [
+    {
+      "size": "full",
+      "text": "View live site",
+      "icon": "icon-link",
+      "link": "http://ideas.kohler.com",
+      "newPage": true
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-1.jpg",
+      "alt": "The Bold Look of Kohler Home"
+    },
+    {
+      "src": "screenshot-2.jpg",
+      "alt": "The Bold Look of Kohler Moodboard Page"
+    },
+    {
+      "src": "screenshot-3.jpg",
+      "alt": "The Bold Look of Kohler Carousel Page"
+    },
+    {
+      "src": "screenshot-4.jpg",
+      "alt": "The Bold Look of Kohler Article Page"
+    },
+    {
+      "src": "screenshot-5.jpg",
+      "alt": "The Bold Look of Kohler Navigation"
+    },
+    {
+      "src": "screenshot-6.jpg",
+      "alt": "The Bold Look of Kohler Lightbox"
+    }
+  ]
+}

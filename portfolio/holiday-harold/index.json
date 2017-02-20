@@ -1,0 +1,23 @@
+{
+  "title": "Holiday Harold",
+  "tags": [
+    "Animation"
+  ],
+  "description": "<p>Holiday Harold was a fun and tongue-in-cheek one-page mini-site created for our agency's marketing and customer outreach. Our designers' imaginations ran wild, and I had the pleasure of bringing their illustrations to life with CSS3 animation.</p>",
+  "buttons": [
+    {
+      "size": "full",
+      "text": "View live site",
+      "icon": "icon-link",
+      "link": "http://www.holidayharold.com",
+      "newPage": true
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-1.jpg",
+      "alt": "Holiday Harold"
+    }
+  ],
+  "disableSlider": true
+}

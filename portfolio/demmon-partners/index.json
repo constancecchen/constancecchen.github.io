@@ -1,0 +1,50 @@
+{
+  "title": "Demmon Partners",
+  "tags": [
+    "PSD to HTML"
+  ],
+  "description": "<p>A marketing website for a real estate company based in California, featuring expandable team biographies and beautiful imagery. I handled the PSD to HTML conversion, and handed off the static assets to another developer to convert into a WordPress theme.</p>",
+  "buttons": [
+    {
+      "size": "full",
+      "text": "View live site",
+      "icon": "icon-link",
+      "link": "http://www.demmonpartners.com",
+      "newPage": true
+    },
+    {
+      "size": "half",
+      "text": "View static site",
+      "icon": "icon-preview",
+      "link": "static"
+    },
+    {
+      "size": "half",
+      "text": "View source code",
+      "icon": "icon-code",
+      "link": "https://github.com/constancecchen/constancecchen.github.io/tree/master/portfolio/demmon-partners/static"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-1.jpg",
+      "alt": "Demmon Partners Home"
+    },
+    {
+      "src": "screenshot-2.jpg",
+      "alt": "Demmon Partners About Page"
+    },
+    {
+      "src": "screenshot-3.jpg",
+      "alt": "Demmon Partners Team Page"
+    },
+    {
+      "src": "screenshot-4.jpg",
+      "alt": "Demmon Partners Properties Page"
+    },
+    {
+      "src": "screenshot-5.jpg",
+      "alt": "Demmon Partners Contact Page"
+    }
+  ]
+}

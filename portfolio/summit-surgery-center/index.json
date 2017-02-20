@@ -1,0 +1,46 @@
+{
+  "title": "Summit Surgery Center",
+  "tags": [
+    "PSD to HTML"
+  ],
+  "description": "<p>Summit Surgery Center was a project featuring a beautiful website redesign for an outpatient surgery in Santa Barbara. I was responsible for converting the design into responsive code (with all included JS functionality), and handing off the assets to another developer to be turned into a WordPress template.</p><p>At the developer's specific request, I utilized more element tags and fewer BEM classes in my CSS for this project.</p>",
+  "buttons": [
+    {
+      "size": "full",
+      "text": "View live site",
+      "icon": "icon-link",
+      "link": "http://www.summitsurgerycenter.com",
+      "newPage": true
+    },
+    {
+      "size": "half",
+      "text": "View static site",
+      "icon": "icon-preview",
+      "link": "static"
+    },
+    {
+      "size": "half",
+      "text": "View source code",
+      "icon": "icon-code",
+      "link": "https://github.com/constancecchen/constancecchen.github.io/tree/master/portfolio/summit-surgery-center/static"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-1.jpg",
+      "alt": "Summit Surgery Center Homepage"
+    },
+    {
+      "src": "screenshot-2.jpg",
+      "alt": "Summit Surgery Center About Page"
+    },
+    {
+      "src": "screenshot-3.jpg",
+      "alt": "Summit Surgery Center Team Page"
+    },
+    {
+      "src": "screenshot-4.jpg",
+      "alt": "Summit Surgery Center Contact Page with Menu Open"
+    }
+  ]
+}

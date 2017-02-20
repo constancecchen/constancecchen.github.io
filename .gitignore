@@ -1,4 +1,6 @@
-# Any in-progress or raw files such as PSDs, etc.
+.DS_Store
+node_modules
 
+# Any in-progress or raw files such as PSDs, etc.
 private/
 *.psd

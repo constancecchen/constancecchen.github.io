@@ -1,0 +1,33 @@
+{
+  "title": "Seattle Indies",
+  "tags": [
+    "WordPress",
+    "Design"
+  ],
+  "description": "<p>A simple event-focused WordPress theme for Seattle's indie video game development community, which I volunteer for and help organize. I was responsible for the design and development of this theme, including migrating the old site over from Squarespace, and maintain it to this day.</p><p>Particularly noteworthy about the site is its extensive use of social APIs. Apart from the blog, the site mostly acts a hub for the various social platforms the organization leverages - such as Facebook, Google Calendar, and Meetup.</p>",
+  "buttons": [
+    {
+      "size": "half",
+      "text": "View live site",
+      "icon": "icon-link",
+      "link": "https://www.seattleindies.org",
+      "newPage": true
+    },
+    {
+      "size": "half",
+      "text": "View source code",
+      "icon": "icon-code",
+      "link": "https://github.com/constancecchen/seattle-indies"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-1.jpg",
+      "alt": "Seattle Indies Home"
+    },
+    {
+      "src": "screenshot-2.jpg",
+      "alt": "Seattle Indies Events Page"
+    }
+  ]
+}

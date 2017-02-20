@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{?title}{title} - {/title}Constance Chen{^title} - Design-oriented Front End Developer{/title}</title>
+
+<!-- OpenGraph -->
+<meta property="og:title" content="{?title}{title} - {/title}Constance Chen{^title} - Design-oriented Front End Developer{/title}">
+<meta property="og:description" content="{?meta.desc}{meta.desc}{:else}Constance Chen is a design-oriented front end developer residing in Seattle, WA.{/meta.desc}">
+<meta property="og:type" content="site">
+<meta property="og:image" content="https://www.constancechen.me/{?meta.image}{meta.image}{:else}constance.jpg{/meta.image}">
+<meta property="og:url" content="https://www.constancechen.me/{meta.url}">
+<meta name="description" content="{?meta.desc}{meta.desc}{:else}Constance Chen is a design-oriented front end developer residing in Seattle, WA.{/meta.desc}">
+<meta name="twitter:site" content="@constancecchen">
+<meta name="twitter:card" content="summary">
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+
+<!-- CSS -->
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- Webfonts -->
+<script src="/js/localFont.js" async></script>
+<noscript><link rel="stylesheet" href="/css/fonts.css"></noscript>

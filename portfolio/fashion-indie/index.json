@@ -1,0 +1,22 @@
+{
+  "title": "Fashion Indie",
+  "tags": [
+    "PSD to HTML"
+  ],
+  "description": "<p>A stylish fashion blog with a focus on gorgeous imagery and image carousels. I enjoyed the continuity and ownership I had with this project, as I implemented several of its redesigns and was responsible for its maintenance and client requests.</p>",
+  "buttons": [],
+  "screenshots": [
+    {
+      "src": "screenshot-1.jpg",
+      "alt": "Fashion Indie Home"
+    },
+    {
+      "src": "screenshot-2.jpg",
+      "alt": "Fashion Indie Article Page"
+    },
+    {
+      "src": "screenshot-3.jpg",
+      "alt": "Fashion Indie Profile Page"
+    }
+  ]
+}

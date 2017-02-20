@@ -1,0 +1,47 @@
+<header class="sidebar ani-slideInLeft" role="banner">
+  <div class="sidebar__about">
+    <a class="sidebar__home-link" href="/">
+      <img class="sidebar__avatar" src="/images/constance.jpg" alt="Constance Chen" width="128" height="128">
+    </a>
+    <h1 class="sidebar__name">Constance Chen</h1>
+    <p class="u-print-hidden">is a designer/front end developer who loves creating aesthetically pleasing and usable things.</p>
+  </div>
+  <ul class="sidebar__socials">
+    <li class="sidebar__link">
+      <a href="mailto:constance.chen.3@gmail.com" title="Email" aria-label="Email">
+        <svg class="sidebar__icon" width="12" height="12">Email <use xlink:href="/images/icons.svg#icon-email"></use></svg>
+        <span class="u-print-only">constance.chen.3@gmail.com</span>
+      </a>
+    </li>
+    <li class="sidebar__link">
+      <a href="tel:1-425-202-5089" title="Phone" aria-label="Phone">
+        <svg class="sidebar__icon" width="12" height="12">Phone <use xlink:href="/images/icons.svg#icon-phone"></use></svg>
+        <span class="u-print-only">(425) 202-5089</span>
+      </a>
+    </li>
+    <li class="sidebar__link u-print-hidden">
+      <a href="/ConstanceChen_Resume.pdf" title="Print Resume" aria-label="Print Resume">
+        <svg class="sidebar__icon" width="12" height="12">Print Resume <use xlink:href="/images/icons.svg#icon-print"></use></svg>
+      </a>
+    </li>
+    <li class="sidebar__link">
+      <a href="https://www.linkedin.com/in/constancechen" title="LinkedIn" aria-label="LinkedIn">
+        <svg class="sidebar__icon" width="12" height="12">LinkedIn <use xlink:href="/images/icons.svg#icon-linkedin"></use></svg>
+        <span class="u-print-only">linkedin.com/in/constancechen</span>
+      </a>
+    </li>
+    <li class="sidebar__link">
+      <a href="https://www.github.com/constancecchen" title="GitHub" aria-label="GitHub">
+        <svg class="sidebar__icon" width="12" height="12">GitHub <use xlink:href="/images/icons.svg#icon-github"></use></svg>
+        <span class="u-print-only">github.com/constancechen</span>
+      </a>
+    </li>
+    <li class="sidebar__link">
+      <a href="https://www.twitter.com/constancecchen" title="Twitter" aria-label="Twitter">
+        <svg class="sidebar__icon" width="12" height="12">Twittter <use xlink:href="/images/icons.svg#icon-twitter"></use></svg>
+        <span class="u-print-only">twitter.com/constancecchen</span>
+      </a>
+    </li>
+    <!-- Dribbble? -->
+  </ul>
+</header>

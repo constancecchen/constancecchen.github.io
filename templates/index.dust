@@ -1,0 +1,7 @@
+{> "layout" /}
+{<content}
+  {> "partials/index/skills" /}
+  {> "partials/index/experience" /}
+  {> "partials/index/education" /}
+  {> "partials/index/portfolio" /}
+{/content}

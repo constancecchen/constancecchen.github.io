@@ -1,0 +1,17 @@
+<section class="portfolio-images">
+
+  <header class="portfolio-images__bar">
+    {^disableSlider}
+      <button class="slider-arrow slider-prev js-slider-prev" title="Previous Screenshot" aria-label="Previous Screenshot"></button>
+      <button class="slider-arrow slider-next js-slider-next" title="Next Screenshot" aria-label="Next Screenshot"></button>
+    {/disableSlider}
+    <a class="portfolio-images__bar-exit js-smoothState" href="/#portfolio" title="Back" aria-label="Back">&times;</a>
+  </header>
+
+  <div class="portfolio-images__body {^disableSlider} js-slider {/disableSlider}">
+    {#screenshots}
+      <img src="{src}" alt="{alt}">
+    {/screenshots}
+  </div>
+
+</section>

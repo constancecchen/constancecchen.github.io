@@ -1,0 +1,51 @@
+{
+  "title": "Pocket Prep",
+  "tags": [
+    "WordPress",
+    "PSD to HTML"
+  ],
+  "description": "<p>Pocket Prep was a delightful website redesign for an app company based in Seattle. I was able to fully own the development of the site, from static HTML to WordPress template, as well as work directly with the client throughout the process.</p><p>I was particularly proud of this project due to this sense of ownership and the client's praise for the final product's polish and ease of use in the admin dashboard. I also greatly enjoyed learning about and implementing custom post types, advanced custom fields and repeaters, and the MixItUp jQuery library.</p>",
+  "buttons": [
+    {
+      "size": "full",
+      "text": "View live site",
+      "icon": "icon-link",
+      "link": "http://www.pocketprep.com",
+      "newPage": true
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-1.jpg",
+      "alt": "Pocket Prep Home"
+    },
+    {
+      "src": "screenshot-2.jpg",
+      "alt": "Pocket Prep About Page"
+    },
+    {
+      "src": "screenshot-3.jpg",
+      "alt": "Pocket Prep Partnerships Page"
+    },
+    {
+      "src": "screenshot-4.jpg",
+      "alt": "Pocket Prep Contact Page"
+    },
+    {
+      "src": "screenshot-5.jpg",
+      "alt": "Pocket Prep Exam Finder Page"
+    },
+    {
+      "src": "screenshot-6.jpg",
+      "alt": "Pocket Prep Exam Page"
+    },
+    {
+      "src": "screenshot-7.jpg",
+      "alt": "Pocket Prep Blog Index"
+    },
+    {
+      "src": "screenshot-8.jpg",
+      "alt": "Pocket Prep Blog Post"
+    }
+  ]
+}

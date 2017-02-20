@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    {> "partials/head" /}
+  </head>
+  <body>
+    {> "partials/header" /}
+
+    <main id="main" class="ani-slideInLeft" role="main">
+      {+content}{/content}
+    </main>
+
+    {> "partials/footer" /}
+    {> "partials/scripts" /}
+  </body>
+</html>

@@ -1,0 +1,228 @@
+{
+  "skills": {
+    "filters": [
+      {
+        "name": "Languages",
+        "id": "lang"
+      },
+      {
+        "name": "Tools",
+        "id": "tool"
+      },
+      {
+        "name": "Platforms & Frameworks",
+        "id": "frame"
+      },
+      {
+        "name": "Knowledge",
+        "id": "soft"
+      }
+    ],
+    "list": [
+      {
+        "filter": "lang",
+        "name": "HTML",
+        "icon": "icon-html"
+      },
+      {
+        "filter": "lang",
+        "name": "CSS",
+        "icon": "icon-css"
+      },
+      {
+        "filter": "lang",
+        "name": "Javascript",
+        "icon": "icon-javascript"
+      },
+      {
+        "filter": "tool",
+        "name": "Sass",
+        "icon": "icon-sass"
+      },
+      {
+        "filter": "tool",
+        "name": "Gulp",
+        "icon": "icon-gulp" },
+      {
+        "filter": "tool",
+        "name": "Git",
+        "icon": "icon-github"
+      },
+      {
+        "filter": "tool",
+        "name": "Command Line",
+        "icon": "icon-cmd"
+      },
+      {
+        "filter": "tool",
+        "name": "Adobe CC",
+        "icon": "icon-photoshop"
+      },
+      {
+        "filter": "frame",
+        "name": "WordPress",
+        "icon": "icon-wordpress"
+      },
+      {
+        "filter": "soft",
+        "name": "Cross-browser standards",
+        "icon": "icon-browsers"
+      },
+      {
+        "filter": "soft",
+        "name": "Responsive web design",
+        "icon": "icon-responsive"
+      },
+      {
+        "filter": "soft",
+        "name": "Working remotely",
+        "icon": "icon-remote"
+      }
+    ]
+  },
+  "experience": {
+    "filters": [
+      {
+        "name": "Development",
+        "id": "dev"
+      },
+      {
+        "name": "Design",
+        "id": "design",
+        "unchecked": true
+      }
+    ],
+    "list": [
+      {
+        "filter": "dev",
+        "title": "Software Development Engineer II",
+        "date": "2016 - present",
+        "location": "Time Inc.",
+        "summary": "At Time, I'm being challenged with the creation of both buttery-smooth front-ends and delightful-to-use back-end CMS's. I work across both Drupal and WordPress to create headless JSON endpoints, which are then ingested by our Node.js front-end servers utilizing Gulp, Stylus, and Dust templating. Thus far, I'm enjoying growing my skills in a variety of areas, such as AWS deployment, QA testing, HTML sanitization, caching, regexes, mentoring and pair programming, and working in a team to maintain clean code bases."
+      },
+      {
+        "filter": "dev",
+        "title": "Front End Web Developer",
+        "date": "2015 - 2016",
+        "location": "Urban Influence",
+        "summary": "At Urban, I greatly enjoyed tackling a variety of fast-paced challenges while managing client expectations and fulfilling the visions of our incredibly talented designers. I produced multiple WordPress themes, using custom post types and advanced custom fields to create end-user experiences and dashboards praised for their usability."
+      },
+      {
+        "filter": "dev",
+        "title": "Web Developer",
+        "date": "2014 - 2015",
+        "location": "Tidal Labs",
+        "summary": "I started out converting Photoshop/Illustrator mocks into live and functional websites, focusing on capturing the pixel-perfection of the designer's vision while making responsive and UX design decisions. I grew from my initial skills in CSS, HTML, and jQuery, to mastering Sass and Github via command line, and began working with other languages such as PHP, Javascript frameworks such as Backbone, Underscore, and React, and consuming as well as creating RESTful APIs."
+      },
+      {
+        "filter": "design",
+        "title": "Graphic Designer",
+        "date": "2012 - 2014",
+        "location": "Freelance",
+        "summary": "I worked with branding and design products such as logos, T-shirts, and book covers. I enjoyed communicating remotely with clients to create products that both parties could be proud of, while establishing and maintaining my own deadlines and workflow."
+      },
+      {
+        "filter": "design",
+        "title": "UI Design Intern",
+        "date": "Jive Software",
+        "location": "2012 - 2013",
+        "summary": "As a UI design intern, I produced print & web design products and mocks while assisting the user interface & marketing teams. I also gained valuable experience and mentorship from other designers and developers, and familiarized myself with scrum and agile methodologies."
+      }
+    ]
+  },
+  "portfolio": {
+    "filters": [
+      {
+        "name": "PSD to HTML",
+        "id": "psd-html"
+      },
+      {
+        "name": "WordPress",
+        "id": "wordpress"
+      },
+      {
+        "name": "Javascript",
+        "id": "javascript"
+      },
+      {
+        "name": "Design",
+        "id": "design"
+      },
+      {
+        "name": "Animation",
+        "id": "animation"
+      }
+    ],
+    "list": [
+      {
+        "filters": "psd-html",
+        "slug": "summit-surgery-center",
+        "title": "Summit Surgery Center",
+        "logoWidth": "80%"
+      },
+      {
+        "filters": "wordpress psd-html",
+        "slug": "pocket-prep",
+        "title": "Pocket Prep",
+        "logoWidth": "40%"
+      },
+      {
+        "filters": "psd-html",
+        "slug": "redfin-real-time",
+        "title": "Redfin Real-Time",
+        "logoWidth": "75%"
+      },
+      {
+        "filters": "animation",
+        "slug": "holiday-harold",
+        "title": "Holiday Harold",
+        "logoWidth": "20%"
+      },
+      {
+        "filters": "psd-html",
+        "slug": "demmon-partners",
+        "title": "Demmon Partners"
+      },
+      {
+        "filters": "psd-html",
+        "slug": "today-parenting-team",
+        "title": "Today Parenting Team"
+      },
+      {
+        "filters": "psd-html",
+        "slug": "tidal",
+        "title": "Tidal",
+        "logoWidth": "50%"
+      },
+      {
+        "filters": "psd-html",
+        "slug": "kohler-ideas",
+        "title": "The Bold Look of Kohler",
+        "logoWidth": "80%"
+      },
+      {
+        "filters": "psd-html",
+        "slug": "fashion-indie",
+        "title": "Fashion Indie"
+      },
+      {
+        "filters": "design",
+        "slug": "bird-box-science",
+        "title": "Bird Box Science",
+        "logoWidth": "60%"
+      },
+      {
+        "filters": "wordpress design",
+        "slug": "seattle-indies",
+        "title": "Seattle Indies",
+        "logoWidth": "50%"
+      },
+      {
+        "filters": "javascript design",
+        "slug": "investigator",
+        "title": "The Investigator Cases",
+        "logoWidth": "35%"
+      }
+    ]
+  }
+}

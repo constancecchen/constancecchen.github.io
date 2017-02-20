@@ -1,0 +1,40 @@
+{
+  "title": "Investigator",
+  "tags": [
+    "Javascript",
+    "Design"
+  ],
+  "description": "<p>Whimsical point-and-click whodunnit games played in the DOM. I create these minigames periodically (every Ludum Dare gamejam), over the span of about three days, in just jQuery, CSS, and HTML. It's essentially one of my fun and creative outlets where I get to write and illustrate ridiculous rhyming animal puns.</p>",
+  "buttons": [
+    {
+      "size": "half",
+      "text": "Play the games",
+      "icon": "icon-link",
+      "link": "https://constancecchen.github.io/Investigator"
+    },
+    {
+      "size": "half",
+      "text": "View source code",
+      "icon": "icon-code",
+      "link": "https://github.com/constancecchen/Investigator"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-1.jpg",
+      "alt": "Investigator Main Menu"
+    },
+    {
+      "src": "screenshot-2.jpg",
+      "alt": "Investigator Scene/Clues"
+    },
+    {
+      "src": "screenshot-3.jpg",
+      "alt": "Investigator Dialogue"
+    },
+    {
+      "src": "screenshot-4.jpg",
+      "alt": "Investigator UI"
+    }
+  ]
+}

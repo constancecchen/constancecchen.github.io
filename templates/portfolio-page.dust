@@ -1,0 +1,6 @@
+<div class="portfolio-page">
+
+  {> "partials/portfolio/text" /}
+  {> "partials/portfolio/images" /}
+
+</div>

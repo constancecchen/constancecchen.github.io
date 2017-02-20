@@ -50,14 +50,14 @@
 	// Animating max-height isn't performant, but the only non-JS way to do a slideup
 }
 #exp-dev:not(:checked) ~ .experiences [data-role~="dev"],
-#exp-des:not(:checked) ~ .experiences [data-role~="design"] {
+#exp-design:not(:checked) ~ .experiences [data-role~="design"] {
 	max-height: 0;
 	margin: 0;
 	transform: translateY(-20%);
 	opacity: 0;
 }
 #exp-dev:checked ~ .experiences [data-role~="dev"],
-#exp-des:checked ~ .experiences [data-role~="design"] {
+#exp-design:checked ~ .experiences [data-role~="design"] {
 	max-height: 40em;
 	opacity: 1;
 	transition:

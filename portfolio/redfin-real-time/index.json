@@ -1,0 +1,30 @@
+{
+  "title": "Redfin Real-Time",
+  "tags": [
+    "PSD to HTML"
+  ],
+  "description": "<p>Our agency had the opportunity of working with Redfin to redesign, modernize, and consolidate their blog. My main responsibility was the initial PSD to HTML conversion and handing assets off to another developer to convert into a WordPress theme. I also continued to assist with WordPress data migration and troubleshooting server issues after.</p>",
+  "buttons": [
+    {
+      "size": "full",
+      "text": "View live site",
+      "icon": "icon-link",
+      "link": "https://www.redfin.com/blog",
+      "newPage": true
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-1.jpg",
+      "alt": "Redfin Real-Time Home"
+    },
+    {
+      "src": "screenshot-2.jpg",
+      "alt": "Redfin Real-Time Archive Page"
+    },
+    {
+      "src": "screenshot-3.jpg",
+      "alt": "Redfin Real-Time Blog Post"
+    }
+  ]
+}

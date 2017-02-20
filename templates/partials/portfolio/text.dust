@@ -1,0 +1,24 @@
+<article class="portfolio-description">
+
+  {#tags}
+    <span class="portfolio-description__tag">
+      {.}
+    </span>
+  {/tags}
+
+  <h2 class="portfolio-description__heading">
+    {title}
+  </h2>
+
+  {description|s}
+
+  <p class="portfolio-description__ctas">
+    {#buttons}
+      <a class="button button--{size}" href="{link}" {?newPage} target="_blank" rel="nofollow noopener" {/newPage}>
+        {?icon}<svg><use xlink:href="/images/icons.svg#{icon}"></use></svg>{/icon}
+        {text}
+      </a>
+    {/buttons}
+  </p>
+
+</article>

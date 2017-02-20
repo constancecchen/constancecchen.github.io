@@ -1,0 +1,31 @@
+{
+  "title": "Bird Box Science",
+  "tags": [
+    "Design"
+  ],
+  "description": "<p>Bird Box Science was designed and created in two days for Bellevue Startup Weekend 2014, as a static mock-up of a social network page and product landing page. The product vision and team took first place, and the majority of them went on to develop the concept into a Kickstarter.</p>",
+  "buttons": [
+    {
+      "size": "half",
+      "text": "View static site",
+      "icon": "icon-preview",
+      "link": "/portfolio/bird-box-science/static"
+    },
+    {
+      "size": "half",
+      "text": "View source code",
+      "icon": "icon-code",
+      "link": "https://github.com/constancecchen/constancecchen.github.io/tree/master/portfolio/bird-box-science/static"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/portfolio/bird-box-science/screenshot-1.jpg",
+      "alt": "Bird Box Science Home"
+    },
+    {
+      "src": "/portfolio/bird-box-science/screenshot-2.jpg",
+      "alt": "Bird Box Profile Page"
+    }
+  ]
+}

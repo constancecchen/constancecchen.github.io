@@ -1,0 +1,30 @@
+{
+  "title": "Today Parenting Team",
+  "tags": [
+    "PSD to HTML"
+  ],
+  "description": "<p>Our company worked closely with the Today Show to create online communities where their viewers could participate, engage, and share knowledge. My responsibility was converting Today's designs into static HTML, and handing off assets to other developers for build-out and maintenance.</p>",
+  "buttons": [
+    {
+      "size": "full",
+      "text": "View live site",
+      "icon": "icon-link",
+      "link": "http://community.today.com",
+      "newPage": true
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-1.jpg",
+      "alt": "Today Parenting Team Home"
+    },
+    {
+      "src": "screenshot-2.jpg",
+      "alt": "Today Parenting Team Challenges Page"
+    },
+    {
+      "src": "screenshot-3.jpg",
+      "alt": "Today Parenting Team Blog Post"
+    }
+  ]
+}
