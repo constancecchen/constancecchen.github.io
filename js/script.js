@@ -68,7 +68,7 @@ $(document).ready(function() {
 		onAfter: function($container, $newContent) {
 			initSliders();
 		},
-    }).data("smoothState");
+	}).data("smoothState");
 
 	initSliders();
 

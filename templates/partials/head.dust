@@ -20,8 +20,8 @@
 <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
 
 <!-- CSS -->
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/style.min.css">
 
 <!-- Webfonts -->
-<script src="/js/localFont.js" async></script>
+<script src="/js/localFont.min.js" async></script>
 <noscript><link rel="stylesheet" href="/css/fonts.css"></noscript>
