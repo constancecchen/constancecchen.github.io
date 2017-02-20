@@ -17,36 +17,6 @@ var initSliders = function() {
   });
 }
 
-var objectFitFallback = function() {
-  $('.portfolio__screenshot').each(function() {
-    var $image = $(this),
-        $container = $image.parent(),
-        containerHeight = $container.height(),
-        containerWidth = $container.width();
-
-    $image.css({
-      "height": containerHeight,
-      "width": "auto",
-    });
-
-    if ($image.width() < containerWidth) {
-      $image.css({
-        "top": "50%",
-        "left": 0,
-        "height": "auto",
-        "width": containerWidth,
-        "marginLeft": 0,
-      }).css("marginTop", $(this).height() / -2);
-    } else {
-      $image.css({
-        "top": 0,
-        "left": "50%",
-        "marginTop": 0,
-      }).css("marginLeft", $(this).width() / -2);
-    }
-  });
-};
-
 $(document).ready(function() {
   $("#main").smoothState({
     anchors: ".js-smoothState, #portfolio a",
@@ -67,18 +37,9 @@ $(document).ready(function() {
     },
     onAfter: function($container, $newContent) {
       initSliders();
+      objectFitPolyfill();
     },
   }).data("smoothState");
 
   initSliders();
-
-  // Object Fit polyfill, primarily for IE
-  if ('objectFit' in document.documentElement.style === false) {
-    objectFitFallback();
-
-    // Optional - continue to responsively cover the image on resize
-    $(window).scroll(function() {
-      objectFitFallback();
-    });
-  }
 });

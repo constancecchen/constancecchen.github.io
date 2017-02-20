@@ -1,9 +1,10 @@
 <!-- JavaScript -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-<script src="/js/smoothState.min.js"></script>
-<script src="/js/script.js" defer></script>
-<script src="/js/slick.min.js" defer></script>
-<script src="/js/svgxuse.min.js" defer></script>
+<script src="/js/lib/smoothState.min.js"></script>
+<script src="/js/script.min.js" defer></script>
+<script src="/js/lib/svgxuse.min.js" defer></script>
+<script src="/js/lib/objectFitPolyfill.basic.min.js" async defer></script>
+<script src="/js/lib/slick.min.js" async defer></script>
 
 <!-- Google Analytics -->
 <script>
@@ -11,4 +12,4 @@ window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 ga('create', 'UA-74090874-1', 'auto');
 ga('send', 'pageview');
 </script>
-<script src='//www.google-analytics.com/analytics.js' defer></script>
+<script src='//www.google-analytics.com/analytics.js' async defer></script>

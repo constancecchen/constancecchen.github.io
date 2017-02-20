@@ -23,5 +23,5 @@
 <link rel="stylesheet" href="/css/style.min.css">
 
 <!-- Webfonts -->
-<script src="/js/localFont.min.js" async></script>
+<script src="/js/lib/localFont.min.js" async></script>
 <noscript><link rel="stylesheet" href="/css/fonts.css"></noscript>

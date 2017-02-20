@@ -17,7 +17,7 @@
           <img class="portfolio__logo" src="/portfolio/{slug}/logo.png" {?logoWidth}width="{logoWidth}"{/logoWidth} alt="{title}">
           <div class="unnecessary-wrapper">
             <div class="due-to-firefox-bug">
-              <img class="portfolio__screenshot" src="/portfolio/{slug}/screenshot-thumb.jpg" alt="{title}">
+              <img class="portfolio__screenshot" src="/portfolio/{slug}/screenshot-thumb.jpg" alt="{title}" data-object-fit>
             </div>
           </div>
         </a>

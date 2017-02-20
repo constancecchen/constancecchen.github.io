@@ -10,7 +10,7 @@
 
   <div class="portfolio-images__body {^disableSlider} js-slider {/disableSlider}">
     {#screenshots}
-      <img src="{src}" alt="{alt}">
+      <img src="/{meta.url}{src}" alt="{alt}">
     {/screenshots}
   </div>
 

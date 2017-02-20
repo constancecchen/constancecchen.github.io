@@ -20,11 +20,11 @@
   ],
   "screenshots": [
     {
-      "src": "/portfolio/bird-box-science/screenshot-1.jpg",
+      "src": "screenshot-1.jpg",
       "alt": "Bird Box Science Home"
     },
     {
-      "src": "/portfolio/bird-box-science/screenshot-2.jpg",
+      "src": "screenshot-2.jpg",
       "alt": "Bird Box Profile Page"
     }
   ]
