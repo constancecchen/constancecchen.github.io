@@ -45,9 +45,8 @@ gulp.task("html:index", function() {
 });
 
 gulp.task("html:portfolio", function() {
-  return gulp.src("portfolio/**/index.dust")
+  return gulp.src("portfolio/**/index.json")
     .pipe(tap(function(file, t) {
-      var filePath = path.relative(file.cwd, file.path);
       var fileDir = path.relative(file.cwd, path.dirname(file.path));
       var data = JSON.parse(fs.readFileSync(fileDir + "/index.json"));
 
@@ -57,12 +56,18 @@ gulp.task("html:portfolio", function() {
       data.meta.image = fileDir + "/screenshot-thumb.jpg";
       data.meta.url = fileDir + "/";
 
-      return gulp.src(filePath)
+      return gulp.src("templates/portfolio-page.dust")
         .pipe(dust({
           basePath: "templates",
           data: data,
         }))
-        .pipe(gulp.dest(fileDir));
+        .pipe(gulp.dest(fileDir))
+        .on("end", function() {
+          fs.renameSync(
+            fileDir + "/portfolio-page.html",
+            fileDir + "/index.html"
+          );
+        });
     }));
 });
 
