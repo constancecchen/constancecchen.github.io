@@ -3,16 +3,16 @@
 ===================================*/
 
 .u-print-only {
-	display: none;
+  display: none;
 
-	@media print {
-		display: initial !important;
-	}
+  @media print {
+    display: initial !important;
+  }
 }
 .u-print-hidden {
-	@media print {
-		display: none !important;
-	}
+  @media print {
+    display: none !important;
+  }
 }
 
 /*==================================
@@ -20,11 +20,11 @@
 ===================================*/
 
 @mixin clearfix {
-	&:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 /*==================================
@@ -33,10 +33,10 @@
 ===================================*/
 
 @mixin word-wrap {
-	word-wrap: break-word;
-	-webkit-hyphens: auto;
-	   -moz-hyphens: auto;
-	        hyphens: auto;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
 }
 
 /*==================================
@@ -45,7 +45,7 @@
 ===================================*/
 
 @mixin ellipsis {
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

@@ -3,74 +3,74 @@
 ===================================*/
 
 .portfolios {
-	@include clearfix;
-	width: 100%;
-	margin: 1em -2px 0;
+  @include clearfix;
+  width: 100%;
+  margin: 1em -2px 0;
 }
 
 .portfolio {
-	position: relative;
-	float: left;
-	height: 16em;
-	width: 100%;
-	padding: 1em .5em;
-	text-align: center;
-	color: $white;
-	background-color: $white;
-	border: 2px solid $white;
-	overflow: hidden;
+  position: relative;
+  float: left;
+  height: 16em;
+  width: 100%;
+  padding: 1em .5em;
+  text-align: center;
+  color: $white;
+  background-color: $white;
+  border: 2px solid $white;
+  overflow: hidden;
 
-	@media (min-width: $mq-small) {
-		height: 15em;
-		width: 50%;
-	}
-	@media (min-width: $mq-medium) {
-		height: 12em;
-		width: 25%;
-	}
+  @media (min-width: $mq-small) {
+    height: 15em;
+    width: 50%;
+  }
+  @media (min-width: $mq-medium) {
+    height: 12em;
+    width: 25%;
+  }
 
-	a {
-		border-bottom: 0;
-	}
+  a {
+    border-bottom: 0;
+  }
 
-	&__heading {
-		margin-top: .5em;
-		font-weight: 400;
-		line-height: 1.3;
-	}
+  &__heading {
+    margin-top: .5em;
+    font-weight: 400;
+    line-height: 1.3;
+  }
 
-	&__logo {
-		// Vertically center
+  &__logo {
+    // Vertically center
     position: absolute;
     top: 50%;
     right: 0;
     left: 0;
-		max-width: 90%;
+    max-width: 90%;
     margin: 0 auto;
     transform: translateY(-50%);
-	}
+  }
 
-	&__screenshot {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		max-width: none;
-		object-fit: cover;
-		//transition: opacity .3s ease-in;
-		//Uncomment this and get rid of wrappers when Firefox fixes its object-fit/transition bug
-	}
+  &__screenshot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    //transition: opacity .3s ease-in;
+    //Uncomment this and get rid of wrappers when Firefox fixes its object-fit/transition bug
+  }
 
-	// https://stackoverflow.com/questions/28939689/
-	.unnecessary-wrapper {
-		height: 100%;
-		transition: opacity .3s ease-in;
-	}
-	.due-to-firefox-bug {
-		height: 100%;
-		transform: translate3d(0, 0, 0);
-	}
+  // https://stackoverflow.com/questions/28939689/
+  .unnecessary-wrapper {
+    height: 100%;
+    transition: opacity .3s ease-in;
+  }
+  .due-to-firefox-bug {
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 /*==================================
@@ -78,40 +78,40 @@
 ===================================*/
 
 .portfolio {
-	overflow: hidden;
-	transition:
-		opacity .4s,
-		max-width .4s ease-out .1s,
-		border 0s .4s, padding 0s .4s,
-		visibility 0s .5s; // Take hidden links out of the tab cycle
-	will-change: opacity;
+  overflow: hidden;
+  transition:
+    opacity .4s,
+    max-width .4s ease-out .1s,
+    border 0s .4s, padding 0s .4s,
+    visibility 0s .5s; // Take hidden links out of the tab cycle
+  will-change: opacity;
 }
 #work-psd-html:not(:checked) ~ .portfolios [data-role~="psd-html"],
 #work-wordpress:not(:checked) ~ .portfolios [data-role~="wordpress"],
 #work-javascript:not(:checked) ~ .portfolios [data-role~="javascript"],
 #work-design:not(:checked) ~ .portfolios [data-role~="design"],
 #work-animation:not(:checked) ~ .portfolios [data-role~="animation"], {
-	max-width: 0;
-	padding: 0;
-	border-width: 0;
-	opacity: 0;
-	visibility: hidden;
+  max-width: 0;
+  padding: 0;
+  border-width: 0;
+  opacity: 0;
+  visibility: hidden;
 }
 #work-psd-html:checked ~ .portfolios [data-role~="psd-html"],
 #work-wordpress:checked ~ .portfolios [data-role~="wordpress"],
 #work-javascript:checked ~ .portfolios [data-role~="javascript"],
 #work-design:checked ~ .portfolios [data-role~="design"],
 #work-animation:checked ~ .portfolios [data-role~="animation"], {
-	// Although it seems redundant, I do need to reiterate these attributes
-	// because it's possible to have multiple roles per portfolio piece.
-	max-width: 100%;
-	padding: inherit;
-	border-width: 2px;
-	opacity: 1;
-	visibility: visible;
-	transition:
-		visibility 0s 0s, border 0s 0s, padding 0s 0s, max-width .5s linear,
-		opacity .4s .2s;
+  // Although it seems redundant, I do need to reiterate these attributes
+  // because it's possible to have multiple roles per portfolio piece.
+  max-width: 100%;
+  padding: inherit;
+  border-width: 2px;
+  opacity: 1;
+  visibility: visible;
+  transition:
+    visibility 0s 0s, border 0s 0s, padding 0s 0s, max-width .5s linear,
+    opacity .4s .2s;
 }
 
 /*==================================
@@ -122,51 +122,51 @@
 // Remove all unnecessary-wrapper references when Firefox fixes its bug
 
 @mixin fadeInScreenshot {
-	//.portfolio__screenshot {
-	.unnecessary-wrapper {
-		opacity: 0;
-	}
+  //.portfolio__screenshot {
+  .unnecessary-wrapper {
+    opacity: 0;
+  }
 
-	a:hover, a:focus {
-		//.portfolio__screenshot {
-		.unnecessary-wrapper {
-			opacity: 1;
-		}
-	}
+  a:hover, a:focus {
+    //.portfolio__screenshot {
+    .unnecessary-wrapper {
+      opacity: 1;
+    }
+  }
 }
 @mixin fadeOutScreenshot {
-	a:hover, a:focus {
-		//.portfolio__screenshot {
-		.unnecessary-wrapper {
-			opacity: 0;
-		}
-	}
+  a:hover, a:focus {
+    //.portfolio__screenshot {
+    .unnecessary-wrapper {
+      opacity: 0;
+    }
+  }
 }
 .portfolio {
-	@media (max-width: $mq-small) {
-		&:nth-child(odd) {
-			@include fadeInScreenshot;
-		}
-		&:nth-child(even) {
-			@include fadeOutScreenshot;
-		}
-	}
-	@media (min-width: $mq-small) and (max-width: $mq-medium) {
-		&:nth-child(4n+1), &:nth-child(4n+4) {
-			@include fadeInScreenshot;
-		}
-		&:nth-child(4n+2), &:nth-child(4n+3) {
-			@include fadeOutScreenshot;
-		}
-	}
-	@media (min-width: $mq-medium) {
-		&:nth-child(8n+1), &:nth-child(8n+3), &:nth-child(8n+6), &:nth-child(8n+8) {
-			@include fadeInScreenshot;
-		}
-		&:nth-child(8n+2), &:nth-child(8n+4), &:nth-child(8n+5), &:nth-child(8n+7) {
-			@include fadeOutScreenshot;
-		}
-	}
+  @media (max-width: $mq-small) {
+    &:nth-child(odd) {
+      @include fadeInScreenshot;
+    }
+    &:nth-child(even) {
+      @include fadeOutScreenshot;
+    }
+  }
+  @media (min-width: $mq-small) and (max-width: $mq-medium) {
+    &:nth-child(4n+1), &:nth-child(4n+4) {
+      @include fadeInScreenshot;
+    }
+    &:nth-child(4n+2), &:nth-child(4n+3) {
+      @include fadeOutScreenshot;
+    }
+  }
+  @media (min-width: $mq-medium) {
+    &:nth-child(8n+1), &:nth-child(8n+3), &:nth-child(8n+6), &:nth-child(8n+8) {
+      @include fadeInScreenshot;
+    }
+    &:nth-child(8n+2), &:nth-child(8n+4), &:nth-child(8n+5), &:nth-child(8n+7) {
+      @include fadeOutScreenshot;
+    }
+  }
 }
 
 /*==================================
@@ -174,30 +174,30 @@
 ===================================*/
 
 .portfolio--summit-surgery-center {
-	background-color: #4398a0;
+  background-color: #4398a0;
 }
 
 .portfolio--roav {
-	background-color: #17c5f7;
+  background-color: #17c5f7;
 }
 
 .portfolio--pocket-prep {
-	background-color: #1f2d36;
+  background-color: #1f2d36;
 }
 
 .portfolio--holiday-harold {
 }
 
 .portfolio--wall-bed-factory {
-	background-color: #a04b32;
+  background-color: #a04b32;
 }
 
 .portfolio--redfin-real-time {
-	background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 .portfolio--demmon-partners {
-	background-color: #887d85;
+  background-color: #887d85;
 }
 
 .portfolio--admin-dashboard {
@@ -207,28 +207,28 @@
 }
 
 .portfolio--tidal {
-	background-color: #66cc00;
+  background-color: #66cc00;
 }
 
 .portfolio--kohler-ideas {
 }
 
 .portfolio--fashion-indie {
-	background-color: #1a1a1a;
+  background-color: #1a1a1a;
 }
 
 .portfolio--bird-box-science {
-	background-color: #ade4ad;
+  background-color: #ade4ad;
 }
 
 .portfolio--seattle-indies {
-	background-color: #ffc712;
+  background-color: #ffc712;
 }
 
 .portfolio--six-jurors {
-	background-color: #f99766;
+  background-color: #f99766;
 }
 
 .portfolio--investigator {
-	background-color: #022c45;
+  background-color: #022c45;
 }

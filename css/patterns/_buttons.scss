@@ -3,58 +3,58 @@
 ===================================*/
 
 .button {
-	display: inline-block;
-	vertical-align: top;
-	padding: .6em .5em .4em;
-	font-weight: 400;
-	text-align: center;
-	color: $blue;
-	border: 2px solid $blue;
-	transition: color .4s, background-color .4s, border-color .4s;
+  display: inline-block;
+  vertical-align: top;
+  padding: .6em .5em .4em;
+  font-weight: 400;
+  text-align: center;
+  color: $blue;
+  border: 2px solid $blue;
+  transition: color .4s, background-color .4s, border-color .4s;
 
-	&:hover, &:focus {
-		color: $white;
-		background-color: $blue;
-		border-color: $blue;
-	}
+  &:hover, &:focus {
+    color: $white;
+    background-color: $blue;
+    border-color: $blue;
+  }
 
-	svg {
-		display: inline-block;
-		vertical-align: middle;
-		width: 1em;
-		height: 1em;
-		margin-top: -.15em;
-		margin-right: .3em;
-	}
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+    margin-top: -.15em;
+    margin-right: .3em;
+  }
 
-	&--full {
-		width: 100%;
-		margin: .4em auto;
+  &--full {
+    width: 100%;
+    margin: .4em auto;
 
-		@media (min-width: $mq-small) {
-			width: 99%;
-			margin-right: .5%;
-			margin-left: .5%;
-		}
-	}
-	&--half {
-		width: 100%;
-		margin: .4em auto;
+    @media (min-width: $mq-small) {
+      width: 99%;
+      margin-right: .5%;
+      margin-left: .5%;
+    }
+  }
+  &--half {
+    width: 100%;
+    margin: .4em auto;
 
-		@media (min-width: $mq-small) {
-			width: 49%;
-			margin-right: .5%;
-			margin-left: .5%;
-		}
-	}
+    @media (min-width: $mq-small) {
+      width: 49%;
+      margin-right: .5%;
+      margin-left: .5%;
+    }
+  }
 
-	&--inverse {
-		color: $white;
-		background-color: $blue;
+  &--inverse {
+    color: $white;
+    background-color: $blue;
 
-		&:hover, &:focus {
-			color: $blue;
-			background-color: transparent;
-		}
-	}
+    &:hover, &:focus {
+      color: $blue;
+      background-color: transparent;
+    }
+  }
 }

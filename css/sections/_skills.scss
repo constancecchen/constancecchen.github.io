@@ -3,38 +3,38 @@
 ===================================*/
 
 .skills {
-	@include clearfix;
-	// Unstyle list
-	margin: .5em auto 0;
-	padding-left: 0;
-	list-style-type: none;
-	// For flex, just in case
-	width: 100%;
+  @include clearfix;
+  // Unstyle list
+  margin: .5em auto 0;
+  padding-left: 0;
+  list-style-type: none;
+  // For flex, just in case
+  width: 100%;
 }
 
 .skill {
-	display: block;
-	float: left;
-	min-width: 50%;
-	width: auto;
-	padding: .4em 1em .4em 0;
+  display: block;
+  float: left;
+  min-width: 50%;
+  width: auto;
+  padding: .4em 1em .4em 0;
 
-	@media (min-width: $mq-small) {
-		min-width: 0;
-		width: 50%;
-	}
-	@media (min-width: $mq-medium) {
-		width: 33%;
-	}
+  @media (min-width: $mq-small) {
+    min-width: 0;
+    width: 50%;
+  }
+  @media (min-width: $mq-medium) {
+    width: 33%;
+  }
 
-	&__icon {
-		display: inline-block;
-		position: relative;
-		top: .15em;
-		height: 1em;
-		width: 1em;
-		margin-right: .3em;
-	}
+  &__icon {
+    display: inline-block;
+    position: relative;
+    top: .15em;
+    height: 1em;
+    width: 1em;
+    margin-right: .3em;
+  }
 }
 
 /*==================================
@@ -42,28 +42,28 @@
 ===================================*/
 
 .skill {
-	overflow: hidden;
-	transition:
-		opacity .3s, transform .3s, max-height .4s linear,
-		padding 0s .3s;
-	will-change: opacity;
+  overflow: hidden;
+  transition:
+    opacity .3s, transform .3s, max-height .4s linear,
+    padding 0s .3s;
+  will-change: opacity;
 }
 #skill-lang:not(:checked) ~ .skills [data-role~="lang"],
 #skill-tool:not(:checked) ~ .skills [data-role~="tool"],
 #skill-frame:not(:checked) ~ .skills [data-role~="frame"],
 #skill-soft:not(:checked) ~ .skills [data-role~="soft"] {
-	max-height: 0;
-	padding: 0;
-	opacity: 0;
-	transform: translateY(-20%);
+  max-height: 0;
+  padding: 0;
+  opacity: 0;
+  transform: translateY(-20%);
 }
 #skill-lang:checked ~ .skills [data-role~="lang"],
 #skill-tool:checked ~ .skills [data-role~="tool"],
 #skill-frame:checked ~ .skills [data-role~="frame"],
 #skill-soft:checked ~ .skills [data-role~="soft"] {
-	max-height: 5em;
-	transition:
-		max-height .4s linear,
-		padding 0s .1s,
-		opacity .3s .2s, transform .3s .2s;
+  max-height: 5em;
+  transition:
+    max-height .4s linear,
+    padding 0s .1s,
+    opacity .3s .2s, transform .3s .2s;
 }

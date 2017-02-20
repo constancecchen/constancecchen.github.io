@@ -3,19 +3,19 @@
 ===================================*/
 
 .footer {
-	padding: 0 1em 1em;
-	font-size: 0.9em;
-	text-align: center;
-	color: $gray;
+  padding: 0 1em 1em;
+  font-size: 0.9em;
+  text-align: center;
+  color: $gray;
 
-	@media print {
-		display: none;
-	}
-	
-	a {
-		font-weight: inherit;
-		color: inherit;
-	}
+  @media print {
+    display: none;
+  }
+
+  a {
+    font-weight: inherit;
+    color: inherit;
+  }
 }
 
 /*==================================
@@ -23,11 +23,11 @@
 ===================================*/
 
 body {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
-	flex-grow: 1;
+  flex-grow: 1;
 }

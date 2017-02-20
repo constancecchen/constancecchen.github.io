@@ -3,26 +3,26 @@
 ===================================*/
 
 body {
-	font-family: $junction;
-	font-size: 1em;
-	font-weight: 300;
-	line-height: 1.6;
-	color: $black;
+  font-family: $junction;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.6;
+  color: $black;
 
-	// Fluid Typography Formula:
-	// startFontSize + (endFontSize + startFontSize / 16) * (100vw - startWindowSize) / (endWindowSize - startWindowSize (unitless))
-	@media (min-width: $mq-large) {
-		font-size: calc(1em + .3125 * (100vw - #{$mq-large}) / 50);
-	}
+  // Fluid Typography Formula:
+  // startFontSize + (endFontSize + startFontSize / 16) * (100vw - startWindowSize) / (endWindowSize - startWindowSize (unitless))
+  @media (min-width: $mq-large) {
+    font-size: calc(1em + .3125 * (100vw - #{$mq-large}) / 50);
+  }
 
-	@media (min-width: $mq-xlarge) {
-		font-size: 1.3125em;
-	}
+  @media (min-width: $mq-xlarge) {
+    font-size: 1.3125em;
+  }
 
-	@media print {
-		font-size: .9em;
-		-webkit-print-color-adjust: exact;
-	}
+  @media print {
+    font-size: .9em;
+    -webkit-print-color-adjust: exact;
+  }
 }
 
 /*==================================
@@ -30,18 +30,18 @@ body {
 ===================================*/
 
 h1, h2, h3, h4, h5, h6 {
-	font-size: 1em;
-	margin: 0;
+  font-size: 1em;
+  margin: 0;
 }
 
 ul, ol, blockquote {
-	margin: 0 auto;
-	padding-left: 0;
-	list-style-type: none;
+  margin: 0 auto;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 p {
-	margin: 0 0 1em;
+  margin: 0 0 1em;
 }
 
 /*==================================
@@ -49,24 +49,24 @@ p {
 ===================================*/
 
 a {
-	color: $blue;
-	font-weight: 400;
-	border-bottom: 2px solid transparent;
-	transition: border-color .4s, color .4s, fill .4s;
+  color: $blue;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+  transition: border-color .4s, color .4s, fill .4s;
 
-	&:focus, &:hover {
-		border-bottom: 2px solid currentColor;
-	}
+  &:focus, &:hover {
+    border-bottom: 2px solid currentColor;
+  }
 }
 
 svg, symbol {
-	fill: currentColor;
+  fill: currentColor;
 }
 a svg {
-	transition: fill .4s ease-in;
+  transition: fill .4s ease-in;
 }
 
 ::selection, ::-moz-selection {
-	background: $blue;
-	color: $white;
+  background: $blue;
+  color: $white;
 }
