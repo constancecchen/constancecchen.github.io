@@ -96,9 +96,9 @@
       {
         "filter": "dev",
         "title": "Software Development Engineer II",
-        "date": "2016 - present",
+        "date": "2016 - 2018",
         "location": "Time Inc.",
-        "summary": "At Time, I'm being challenged with the creation of both buttery-smooth front-ends and delightful-to-use back-end CMS's. I work across both Drupal and WordPress to create headless JSON endpoints, which are then ingested by our Node.js front-end servers utilizing Gulp, Stylus, and Dust templating. Thus far, I'm enjoying growing my skills in a variety of areas, such as AWS deployment, QA testing, HTML sanitization, caching, regexes, mentoring and pair programming, and working in a team to maintain clean code bases."
+        "summary": "At Time, I took on challenges from launching blazing-fast front-ends to spinning up delightful-to-use back-end CMS's. I worked across both headless Drupal and WordPress to create API endpoints, which were then ingested by our Node.js front-end servers utilizing Express, Gulp, Stylus, and Handlebars templating. I truly enjoyed growing my full-stack skills in a variety of areas, such as AWS and CircleCI deployment, end-to-end functional testing, and working as a team to maintain clean code bases."
       },
       {
         "filter": "dev",
@@ -112,7 +112,7 @@
         "title": "Web Developer",
         "date": "2014 - 2015",
         "location": "Tidal Labs",
-        "summary": "I started out converting Photoshop/Illustrator mocks into live and functional websites, focusing on capturing the pixel-perfection of the designer's vision while making responsive and UX design decisions. I grew from my initial skills in CSS, HTML, and jQuery, to mastering Sass and Github via command line, and began working with other languages such as PHP, Javascript frameworks such as Backbone, Underscore, and React, and consuming as well as creating RESTful APIs."
+        "summary": "I started out converting Photoshop/Illustrator mocks into live and functional websites, focusing on capturing the pixel-perfection of the designer's vision while making responsive and UX design decisions. I grew from my initial skills in CSS, HTML, & jQuery to mastering Sass & Git via command line. I also worked on apps in PHP & Laravel, JS frameworks such as React, Backbone, & Underscore, and consuming as well as creating RESTful APIs."
       },
       {
         "filter": "design",

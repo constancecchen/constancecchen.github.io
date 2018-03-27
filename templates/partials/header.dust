@@ -4,7 +4,7 @@
       <img class="sidebar__avatar" src="/images/constance.jpg" alt="Constance Chen" width="128" height="128">
     </a>
     <h1 class="sidebar__name">Constance Chen</h1>
-    <p class="u-print-hidden">is a designer/front end developer who loves creating aesthetically pleasing and usable things.</p>
+    <p class="u-print-hidden">is a design-oriented front end developer who loves mixing creativity and technology.</p>
   </div>
   <ul class="sidebar__socials">
     <li class="sidebar__link">
