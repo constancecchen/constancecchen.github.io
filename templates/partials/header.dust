@@ -33,7 +33,7 @@
     <li class="sidebar__link">
       <a href="https://www.github.com/constancecchen" title="GitHub" aria-label="GitHub">
         <svg class="sidebar__icon" width="12" height="12">GitHub <use xlink:href="/images/icons.svg#icon-github"></use></svg>
-        <span class="u-print-only">github.com/constancechen</span>
+        <span class="u-print-only">github.com/constancecchen</span>
       </a>
     </li>
     <li class="sidebar__link">

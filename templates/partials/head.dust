@@ -8,8 +8,8 @@
 <meta property="og:title" content="{?title}{title} - {/title}Constance Chen{^title} - Design-oriented Front End Developer{/title}">
 <meta property="og:description" content="{?meta.desc}{meta.desc}{:else}Constance Chen is a design-oriented front end developer residing in Seattle, WA.{/meta.desc}">
 <meta property="og:type" content="site">
-<meta property="og:image" content="https://www.constancechen.me/{?meta.image}{meta.image}{:else}constance.jpg{/meta.image}">
-<meta property="og:url" content="https://www.constancechen.me/{meta.url}">
+<meta property="og:image" content="https://constance.dev/{?meta.image}{meta.image}{:else}constance.jpg{/meta.image}">
+<meta property="og:url" content="https://constance.dev/{meta.url}">
 <meta name="description" content="{?meta.desc}{meta.desc}{:else}Constance Chen is a design-oriented front end developer residing in Seattle, WA.{/meta.desc}">
 <meta name="twitter:site" content="@constancecchen">
 <meta name="twitter:card" content="summary">

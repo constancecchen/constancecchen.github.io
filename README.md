@@ -1,4 +1,4 @@
-# constancechen.me
+# [constance.dev](https://constance.dev)
 
 My personal dev site/resume. Always a work-in-progress.
 

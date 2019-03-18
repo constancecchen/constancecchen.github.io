@@ -1,7 +1,7 @@
 {
-  "name": "constancechen.me",
+  "name": "constance.dev",
   "author": "Constance Chen",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "The personal dev/resume site of Constance Chen",
   "main": "gulpfile.js",
   "repository": {
