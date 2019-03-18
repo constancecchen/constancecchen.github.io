@@ -21,47 +21,63 @@
     "list": [
       {
         "filter": "lang",
-        "name": "HTML",
+        "name": "Semantic HTML",
         "icon": "icon-html"
       },
       {
         "filter": "lang",
-        "name": "CSS",
+        "name": "Clean CSS",
         "icon": "icon-css"
       },
       {
-        "filter": "lang",
-        "name": "Javascript",
-        "icon": "icon-javascript"
-      },
-      {
         "filter": "tool",
-        "name": "Sass",
+        "name": "Sass, Less, Stylus, PostCSS",
         "icon": "icon-sass"
       },
       {
-        "filter": "tool",
-        "name": "Gulp",
-        "icon": "icon-gulp" },
+        "filter": "lang",
+        "name": "Javascript ES2018",
+        "icon": "icon-javascript"
+      },
       {
-        "filter": "tool",
-        "name": "Git",
-        "icon": "icon-github"
+        "filter": "frame",
+        "name": "React",
+        "icon": "icon-react"
       },
       {
         "filter": "tool",
-        "name": "Command Line",
+        "name": "Test coverage (Jest, Enzyme)",
+        "icon": "icon-testing"
+      },
+      {
+        "filter": "tool",
+        "name": "CLI builders (Webpack, Gulp)",
         "icon": "icon-cmd"
       },
       {
         "filter": "tool",
-        "name": "Adobe CC",
+        "name": "CI/CD (CircleCI, Jenkins)",
+        "icon": "icon-cicd"
+      },
+      {
+        "filter": "tool",
+        "name": "Version control (Git)",
+        "icon": "icon-github"
+      },
+      {
+        "filter": "tool",
+        "name": "Adobe CC suite",
         "icon": "icon-photoshop"
       },
       {
         "filter": "frame",
-        "name": "WordPress",
+        "name": "WordPress ecosystem",
         "icon": "icon-wordpress"
+      },
+      {
+        "filter": "soft",
+        "name": "a11y accessibility",
+        "icon": "icon-a11y"
       },
       {
         "filter": "soft",
