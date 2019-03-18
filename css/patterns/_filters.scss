@@ -19,9 +19,10 @@
 
 .filter__label {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   margin: .8em .2em 0;
-  padding: .35em .6em .2em;
+  padding: .3em .6em;
   font-size: .85em;
   color: #777;
   background-color: #ccc;
@@ -40,7 +41,6 @@
   &:before {
     content: "";
     display: inline-block;
-    vertical-align: middle;
     width: .9em;
     height: .9em;
     margin-right: .5em;
@@ -50,9 +50,8 @@
   &:after {
     content: "";
     position: absolute;
-    top: .7em;
-    left: .625em;
-    display: inline-block;
+    left: .63em;
+    top: 50%;
     width: .8em;
     height: .8em;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 16'%3E%3Cpath d='M3.432,6.189 C3.824,5.798 4.455,5.798 4.847,6.189 L6.968,8.31 L13.147,2.131 C13.531,1.747 14.157,1.753 14.548,2.144 L16.67,4.266 C17.06,4.657 17.066,5.284 16.684,5.666 L7.662,14.687 C7.278,15.07 6.651,15.064 6.261,14.673 L1.311,9.723 C0.92,9.333 0.92,8.7 1.311,8.31 L3.432,6.189 Z' fill='%2359c'/%3E%3C/svg%3E");
@@ -60,6 +59,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     opacity: 0;
+    transform: translateY(-50%);
     transition: opacity .2s ease-in;
     will-change: opacity;
   }
