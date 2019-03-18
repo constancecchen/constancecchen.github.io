@@ -95,6 +95,13 @@
     "list": [
       {
         "filter": "dev",
+        "title": "Software Engineer Technical Lead",
+        "date": "2018 - present",
+        "location": "Rakuten USA",
+        "summary": "I'm currently leading a UI/UX team at Rakuten that's creating a React component library to bring more consistent branding, visuals, and UX behavior across multiple dashboards and apps. There's any number of things I'm delighted to be working on, but aspects of this product that I'm particularly proud of are our 98%+ Jest/Enzyme test coverage, our rapport and developer experience with other teams that we support, and the incredible strides we're making in a11y and i18n accessibility."
+      },
+      {
+        "filter": "dev",
         "title": "Software Development Engineer II",
         "date": "2016 - 2018",
         "location": "Time Inc.",
